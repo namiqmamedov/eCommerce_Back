@@ -1,0 +1,459 @@
+﻿@model PagiNationList<Product>
+
+<div class="drawer-menu">
+    <nav id="nav">
+        <div class="accordion__main contents">
+            <div class="accordion-single js-acc-single">
+                <div class="accordion-single-item js-acc-item is-open">
+                    <h3 class="accordion-single-title js-acc-single-trigger">
+                        <label>
+                            All Categories
+                        </label>
+                    </h3>
+                    <div class="accordion-single-content">
+                        <ul>
+                            @foreach (Category item in ViewBag.Categories)
+                            {
+                                <li>
+                                    <a data-category="@item.ID" asp-controller="shop" asp-action="index" asp-route-category="@item.ID"
+                                       class="category-link">@item.Name</a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-single-item js-acc-item is-open">
+                    <h3 class="accordion-single-title js-acc-single-trigger">
+                        <label>
+                            Price
+                        </label>
+                    </h3>
+                    <div class="accordion-single-content">
+                        <ul>
+                            <li><a class="price-link" data-price="1" asp-controller="shop" asp-action="index" asp-route-minPrice="0" asp-route-maxPrice="100">$0.00 - $100.00</a></li>
+                            <li><a class="price-link" data-price="2" asp-controller="shop" asp-action="index" asp-route-minPrice="100" asp-route-maxPrice="300">$100.00 - $200.00</a></li>
+                            <li><a class="price-link" data-price="3" asp-controller="shop" asp-action="index" asp-route-minPrice="200" asp-route-maxPrice="300">$200.00 - $300.00</a></li>
+                            <li><a class="price-link" data-price="4" asp-controller="shop" asp-action="index" asp-route-minPrice="300" asp-route-maxPrice="500">$300.00 - $500.00</a></li>
+                        </ul>
+                        <form asp-controller="shop" asp-action="index" method="GET" class="price-range mt-3">
+                            <input type="number" name="minPrice" class="min_price text-center" placeholder="$min">
+                            <span class="dash">-</span>
+                            <input type="number" name="maxPrice" class="max_price text-center" placeholder="$max">
+                            <button type="submit" class="btn btn-primary btn-rounded">Go</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="accordion-single-item js-acc-item is-open">
+                    <h3 class="accordion-single-title js-acc-single-trigger">
+                        <label>
+                            Size
+                        </label>
+                    </h3>
+                    <div class="accordion-single-content">
+                        <div class="checkboxes">
+                            <div class="checkboxes__row">
+                                <ul>
+                                    @foreach (var item in ViewBag.Sizes)
+                                    {
+                                        <li class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <a class="sizeItem" data-size="@item.ID" asp-controller="shop" asp-action="index" asp-route-size="@item.ID">
+                                                    <input type="checkbox" />
+                                                    <div class="checkbox__checkmark"></div>
+                                                </a>
+                                                <a asp-controller="shop" asp-action="index" asp-route-size="@item.ID" data-size="@item.ID" class="checkbox__body">@item.Name</a>
+                                            </label>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-single-item js-acc-item is-open">
+                    <h3 class="accordion-single-title js-acc-single-trigger">
+                        <label>
+                            Brand
+                        </label>
+                    </h3>
+                    <div class="accordion-single-content">
+                        <div class="checkboxes">
+                            <div class="checkboxes__row">
+                                <ul>
+                                    @foreach (var item in ViewBag.Brands)
+                                    {
+                                        <li class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <a class="brandItem" data-brand="@item.ID" asp-controller="shop" asp-action="index" asp-route-brand="@item.ID">
+                                                    <input type="checkbox" />
+                                                    <div class="checkbox__checkmark"></div>
+                                                </a>
+                                                <a asp-controller="shop" asp-action="index" asp-route-brand="@item.ID" data-brand="@item.ID" class="checkbox__body">@item.Name</a>
+                                            </label>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-single-item js-acc-item is-open">
+                    <h3 class="accordion-single-title js-acc-single-trigger">
+                        <label>
+                            Color
+                        </label>
+                    </h3>
+                    <div class="accordion-single-content">
+                        <div class="checkboxes">
+                            <div class="checkboxes__row">
+                                <ul>
+                                    @foreach (var item in ViewBag.Colors)
+                                    {
+                                        <li class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <a class="colorItem" data-color="@item.ID" asp-controller="shop" asp-action="index" asp-route-color="@item.ID">
+                                                    <input type="checkbox" />
+                                                    <div class="checkbox__checkmark"></div>
+                                                </a>
+                                                <a asp-controller="shop" asp-action="index" asp-route-color="@item.ID" data-color="@item.ID" class="checkbox__body">@item.Name</a>
+                                            </label>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay-menu" id="overlay-menu">
+    </div>
+</div>
+<main>
+    <nav class="breadcrumb-nav">
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumb-main">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar__banner">
+        <div class="container">
+            <div class="row">
+                <div id="banner-sidebar" class="banner-main">
+                    <div class="banner-box">
+                        <div class="banner-content">
+                            <h4>Accessories Collection</h4>
+                            <h3 id="main">Smart Wrist Watches</h3>
+                            <a asp-controller="home" asp-action="index" class="btn__main">
+                                DISCOVER NOW
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <img src="~/assets/images/banner-14.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category__main">
+        <div class="container">
+            <div class="row">
+                <div class="category-box">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="6">
+                                    <img src="/assets/images/categories/category-1.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a href="#">
+                                            Gifts
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="5">
+                                    <img src="/assets/images/categories/category-2.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="5">
+                                            Healthy & Beauty
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="8">
+                                    <img src="/assets/images/categories/category-3.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="8">
+                                            Cooking
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="10">
+                                    <img src="/assets/images/categories/category-4.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="10">
+                                            Cameras
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="7">
+                                    <img src="/assets/images/categories/category-5.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="7">
+                                            Toy & Games
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="11">
+                                    <img src="/assets/images/categories/category-6.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="11">
+                                            Accessories
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="3">
+                                    <img src="/assets/images/categories/category-8.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="3">
+                                            Electronics
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <a asp-controller="shop" asp-action="index" asp-route-category="1">
+                                    <img src="/assets/images/categories/category-9.jpg" alt="Category Image">
+                                </a>
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a asp-controller="shop" asp-action="index" asp-route-category="1">
+                                            Fashion
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar__main">
+        <div class="container">
+            <div class="row">
+                <div class="product__main-wrapper">
+                    <div class="product-filter col-lg-3">
+                        <div class="accordion__main contents">
+                            <div class="accordion-single js-acc-single">
+                                <div class="accordion-single-item js-acc-item is-open">
+                                    <h3 class="accordion-single-title js-acc-single-trigger">
+                                        <label>
+                                            All Categories
+                                        </label>
+                                    </h3>
+                                    <div class="accordion-single-content">
+                                        <ul>
+                                            @foreach (Category item in ViewBag.Categories)
+                                            {
+                                                <li>
+                                                    <a data-category="@item.ID" asp-controller="shop" asp-action="index" asp-route-category="@item.ID"
+                                                      class="category-link">@item.Name</a>
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="accordion-single-item js-acc-item is-open">
+                                    <h3 class="accordion-single-title js-acc-single-trigger">
+                                        <label>
+                                            Price
+                                        </label>
+                                    </h3>
+                                    <div class="accordion-single-content price-filter">
+                                        <ul>
+                                            <li><a class="price-link" data-price="1" asp-controller="shop" asp-action="index" asp-route-minPrice="0" asp-route-maxPrice="100">$0.00 - $100.00</a></li>
+                                            <li><a class="price-link" data-price="2" asp-controller="shop" asp-action="index" asp-route-minPrice="100" asp-route-maxPrice="300">$100.00 - $200.00</a></li>
+                                            <li><a class="price-link" data-price="3" asp-controller="shop" asp-action="index" asp-route-minPrice="200" asp-route-maxPrice="300">$200.00 - $300.00</a></li>
+                                            <li><a class="price-link" data-price="4" asp-controller="shop" asp-action="index" asp-route-minPrice="300" asp-route-maxPrice="500">$300.00 - $500.00</a></li>
+                                        </ul>
+                                        <form asp-controller="shop" asp-action="index" method="GET" class="price-range">
+                                            <input type="number" name="minPrice" class="min_price text-center" placeholder="$min">
+                                            <span class="dash">-</span>
+                                            <input type="number" name="maxPrice" class="max_price text-center" placeholder="$max">
+                                            <button type="submit" class="btn btn-primary btn-rounded">Go</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="accordion-single-item js-acc-item is-open">
+                                    <h3 class="accordion-single-title js-acc-single-trigger">
+                                        <label>
+                                            Size
+                                        </label>
+                                    </h3>
+                                    <div class="accordion-single-content">
+                                        <div class="checkboxes">
+                                            <div class="checkboxes__row">
+                                                <ul>
+                                                    @foreach (var item in ViewBag.Sizes)
+                                                    {
+                                                        <li class="checkboxes__item">
+                                                                <label class="checkbox style-c">
+                                                                <a class="sizeItem" data-size="@item.ID" asp-controller="shop" asp-action="index" asp-route-size="@item.ID">
+                                                                        <input type="checkbox" />
+                                                                        <div class="checkbox__checkmark"></div>
+                                                                </a>
+                                                                <a asp-controller="shop" asp-action="index" asp-route-size="@item.ID" data-size="@item.ID" class="checkbox__body">@item.Name</a>
+                                                                </label>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-single-item js-acc-item is-open">
+                                    <h3 class="accordion-single-title js-acc-single-trigger">
+                                        <label>
+                                            Brand
+                                        </label>
+                                    </h3>
+                                    <div class="accordion-single-content">
+                                        <div class="checkboxes">
+                                            <div class="checkboxes__row">
+                                                <ul>
+                                                    @foreach (var item in ViewBag.Brands)
+                                                    {
+                                                        <li class="checkboxes__item">
+                                                            <label class="checkbox style-c">
+                                                                <a class="brandItem" data-brand="@item.ID" asp-controller="shop" asp-action="index" asp-route-brand="@item.ID">
+                                                                    <input type="checkbox" />
+                                                                    <div class="checkbox__checkmark"></div>
+                                                                </a>
+                                                                <a asp-controller="shop" asp-action="index" asp-route-brand="@item.ID" class="checkbox__body">@item.Name</a>
+                                                            </label>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-single-item js-acc-item is-open">
+                                    <h3 class="accordion-single-title js-acc-single-trigger">
+                                        <label>
+                                            Color
+                                        </label>
+                                    </h3>
+                                    <div class="accordion-single-content">
+                                        <div class="checkboxes">
+                                            <div class="checkboxes__row">
+                                                <ul>
+                                                    @foreach (var item in ViewBag.Colors)
+                                                    {
+                                                        <li class="checkboxes__item">
+                                                            <label class="checkbox style-c">
+                                                                <a data-color="@item.ID" class="colorItem" asp-controller="shop" asp-action="index" asp-route-color="@item.ID">
+                                                                    <input type="checkbox" />
+                                                                    <div class="checkbox__checkmark"></div>
+                                                                </a>
+                                                                <a asp-controller="shop" asp-action="index" asp-route-color="@item.ID" class="checkbox__body">@item.Name</a>
+                                                            </label>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-list col-lg-9">
+                        <div class="select__main">
+                            <div class="sort__wrapper">
+
+                                <div class="filter-menu text-uppercase" onClick="toggle();">
+                                    <i class="fa-solid fa-bars"></i>
+                                    Filters
+                                </div>
+                                <div class="sort-by">
+                                    <label>Sort By :</label>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <select name="orderby" class="form-control">
+                                        <option value="default" selected="selected">Default sorting</option>
+                                        <option value="rating">Sort by rating</option>
+                                        <option value="date">Sort by latest</option>
+                                        <option value="price-low">Sort by pric: low to high</option>
+                                        <option value="price-high">Sort by price: high to low</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="show__item">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <select name="item-count" class="form-control">
+                                    <option value="9">Show 9</option>
+                                    <option value="12" selected="selected">Show 12</option>
+                                    <option value="24">Show 24</option>
+                                    <option value="36">Show 36</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="filteredProducts">
+                            @await Html.PartialAsync("_FilteredProductPartial", Model)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+

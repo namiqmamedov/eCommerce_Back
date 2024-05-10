@@ -1,0 +1,24 @@
+﻿@model List<CartVM>
+
+<div class="product__form-main">
+    <div class="input-group">
+        @foreach (CartVM item in Model)
+        {
+            <input class="quantity form-control" type="text" value="@item.Count">
+            <button class="minus-btn">
+                <a class="minusCount" asp-controller="cart" asp-action="UpdateCount" asp-route-id="@item.ProductID">
+                    <i class="fa-solid fa-minus"></i>
+                </a>
+            </button>
+            <button class="plus-btn">
+                <a class="plusCount" asp-controller="cart" asp-action="UpdateCount" asp-route-id="@item.ProductID">
+                    <i class="fa-solid fa-plus"></i>
+                </a>
+            </button>
+        }
+    </div>
+</div>
+<a href="#" class="addToCart disabled">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span>Add to Cart</span>
+</a>

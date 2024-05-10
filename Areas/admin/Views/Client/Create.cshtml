@@ -1,0 +1,20 @@
+﻿@model Client
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="File">Image</label>
+                    <input class="form-control" asp-for="File" placeholder="Image...">
+                    <span class="text-danger" asp-validation-for="File"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+</div>

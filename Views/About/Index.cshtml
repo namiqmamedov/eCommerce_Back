@@ -1,0 +1,149 @@
+﻿@model AboutVM
+
+<div class="page-header">
+    <h1 class="page-title mb-0">About Us</h1>
+</div>
+
+<nav class="breadcrumb-nav">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumb-main">
+                <li>
+                    <a asp-controller="home" asp-action="index">Home</a>
+                </li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li>
+                    <a asp-controller="about" asp-action="index">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="about__top">
+                <h4 style="max-width: 55%" class="title text-center">@Model.Settings.FirstOrDefault(x => x.Key == "AboutTitle").Value</h4>
+                <p class="desc text-center">@Model.Settings.FirstOrDefault(x => x.Key == "AboutDescription").Value</p>
+                <img src="~/assets/images/@Model.Settings.FirstOrDefault(x => x.Key == "AboutImage").Value" alt="About Us">
+            </div>
+            <div class="about__center">
+                <div class="col-lg-6">
+                    <h2 class="title">We Provide Continuous & Kind Service for Customers</h2>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-main">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Customer Service
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        It is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Online Consulation
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Sales Management
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    It is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-box">
+                        <img src="/assets/images/about_us_2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="about__box">
+                    <div class="about-box">
+                        <span>15M+</span>
+                        <h4>Products For Sale</h4>
+                        <p>
+                            Diam maecenas ultricies mi eget mauris
+                            Nibh tellus molestie nunc non
+                        </p>
+                    </div>
+                    <div class="about-box">
+                        <span>$25B+</span>
+                        <h4>Community Earnings</h4>
+                        <p>
+                            Diam maecenas ultricies mi eget mauris
+                            Nibh tellus molestie nunc non
+                        </p>
+                    </div>
+                    <div class="about-box">
+                        <span>100M+</span>
+                        <h4>Growing Buyers</h4>
+                        <p>
+                            Diam maecenas ultricies mi eget mauris
+                            Nibh tellus molestie nunc non
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="about__awards">
+    <div class="container">
+        <div class="row">
+            <div class="about-item">
+                <div class="col-lg-6">
+                    <img src="/assets/images/about_us_3.jpg" alt="About Us">
+                </div>
+                <div class="col-lg-6">
+                    <h4>
+                        We Boost Our Clients’ Bottom
+                        Line by Optimizing Their Growth Potential
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Venenatis tellus in.
+                        metus vulputate eu scelerisque felis. Vel pretium lectus qua .
+                        Arpis massa. Nunc id cursus metus ididunt ut labore metus vulputate episcing.
+                    </p>
+                    <button type="submit" class="btn__main">
+                        Visit our store
+                    </button>
+                </div>
+
+                <h4 class="award-title">Awards</h4>
+                <div class="award_box col-lg-12">
+                    @foreach (Award item in Model.Awards)
+                    {
+                        <div class="award-item">
+                            <img src="~/assets/images/@item.Logo" alt="Award Box">
+                            <p class="mt-2">
+                                @item.Text
+                            </p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

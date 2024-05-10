@@ -1,0 +1,45 @@
+﻿@model PagiNationList<Slider>
+
+@{
+    int counter = Model.PageIndex == 1 ? 0 : (Model.PageIndex - 1) * 5;
+}
+
+<table class="table table-hover table-s-triped">
+    <thead>
+        <tr class="head__first">
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col" style="text-align: end;padding-right: 61px;">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Slider item in Model)
+        {
+            counter++;
+
+            <tr>
+                <th scope="row">@counter</th>
+                <td style="width: 12%;">
+                    <img class="w-100" height="150px" src="~/assets/images/slides/@item.Image" alt="Slides Image" />
+                </td>
+                <td>@item.TopTitle</td>
+                <td>
+                    <div class="settings-tb d-flex gap-2 justify-content-end">
+                        <a class="btn btn-secondary" asp-controller="slider" asp-action="read" asp-area="admin" asp-route-id="@item.ID">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a>
+                        <a class="btn btn-primary edit-btn" asp-controller="slider" asp-action="update" asp-area="admin" asp-route-id="@item.ID">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                        <a class="btn btn-danger removeBtn" id="removeBtn" asp-controller="slider" asp-action="delete" asp-area="admin" asp-route-id="@item.ID">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

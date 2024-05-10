@@ -1,0 +1,111 @@
+﻿@model Product
+
+<figure class="product-gallery">
+    <a asp-controller="shop" asp-action="detail" asp-route-id="@Model.ID">
+        <img src="~/assets/images/products/@Model.MainImage" alt="@Model.Name">
+        @if (Model.HoverImage != null)
+        {
+            <img src="~/assets/images/products/@Model.HoverImage" alt="@Model.Name">
+        }
+    </a>
+    <div class="product-menu">
+        <a asp-controller="cart" asp-action="addtocart" asp-route-id="@Model.ID" class="btn-label btn-cart addToCart" title="Add to cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+        <a asp-controller="wishlist" asp-action="addtowishlist" asp-route-id="@Model.ID" class="btn-label btn-wishlist addToCart" title="Add to wishlist">
+            <i class="fa-regular fa-heart"></i>
+        </a>
+    </div>
+    @{
+        var timeCheck = DateTime.Today.AddMonths(-1);
+    }
+
+    <div class="product-label-main">
+        @if (Model.CreatedAt >= timeCheck)
+        {
+            <label class="product-label label-new">New</label>
+        }
+        @if (Model.ProductColors.Any(x => x.DiscountedPrice.HasValue))
+        {
+            var colors = Model.ProductColors;
+
+            var firstColor = colors.FirstOrDefault();
+
+            double? minNormalPrice = firstColor?.Price;
+            double? minDiscountedPrice = firstColor?.DiscountedPrice;
+
+            if (minNormalPrice.HasValue && minDiscountedPrice.HasValue)
+            {
+                double normalPrice = minNormalPrice.Value;
+                double discountedPrice = minDiscountedPrice.Value;
+                double discountPercentage = ((normalPrice - discountedPrice) / normalPrice) * 100;
+                <label class="product-label label-discount">-@(Math.Round(discountPercentage))%</label>
+            }
+        }
+    </div>
+</figure>
+<div class="product-details">
+    <h4 class="product-title">
+        <a asp-controller="shop" asp-action="detail" asp-route-id="@Model.ID">
+            @Model.Name
+        </a>
+    </h4>
+    <div class="ratings-wrapper">
+        <div class="ratings-main">
+            @{
+                double totalRating = 0;
+                int feedbackCount = 0;
+
+                foreach (Feedback feedback in Model.Feedbacks)
+                {
+                    totalRating += feedback.Rating;
+                    feedbackCount++;
+                }
+
+                double averageRating = feedbackCount > 0 ? totalRating / feedbackCount : 0;
+            }
+
+            @for (int i = 0; i < 5; i++)
+            {
+                if (i < averageRating)
+                {
+                    <i class="fa-solid fa-star"></i>
+                }
+                else
+                {
+                    <i class="fa-solid far fa-star"></i>
+                }
+            }
+        </div>
+        <a asp-controller="shop" asp-action="detail" asp-route-id="@Model.ID" class="rating">(@Model.Feedbacks.Count Reviews)</a>
+    </div>
+    <div class="product-price">
+
+        @if (Model.ProductColors.All(x => x.DiscountedPrice == null))
+        {
+            var minPrice = Model.ProductColors.Min(x => x.Price).ToString("0.00");
+            var maxPrice = Model.ProductColors.Max(x => x.Price).ToString("0.00");
+
+            <ins class="new-price">$@minPrice</ins>
+            <span>-</span>
+            <span class="del-price">$@maxPrice</span>
+        }
+
+        @{
+            var firstProductColor = Model.ProductColors.FirstOrDefault();
+            var discountedFirstPrice = firstProductColor?.DiscountedPrice?.ToString("0.00");
+            var normalFirstPrice = firstProductColor?.Price.ToString("0.00");
+        }
+
+        @if (discountedFirstPrice != null && discountedFirstPrice != "0")
+        {
+            <ins class="new-price">$@discountedFirstPrice</ins>
+            <del class="old-price">$@normalFirstPrice</del>
+        }
+
+        @if(discountedFirstPrice == null && normalFirstPrice != null && !Model.ProductColors.All(x => x.DiscountedPrice == null))
+        {
+            <ins class="new-price">$@normalFirstPrice</ins>
+        }
+    </div>
+</div>

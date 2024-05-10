@@ -1,0 +1,76 @@
+﻿@using Wolmart.MVC.Enums
+@model Order
+@{
+    ViewData["Title"] = "Update";
+    int counter = 0;
+}
+
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Name @Model.Surname</h5>
+                        <p class="card-text">@Model.Country.Name</p>
+                        <p class="card-text">@Model.OrderStatus</p>
+                        <p class="card-text">$@Model.TotalPrice.ToString("F2")</p>
+                        <p class="card-text">@Model.AddressFirst</p>
+                        <p class="card-text">@Model.AddressSecond</p>
+                        <p class="card-text">@Model.Phone</p>
+                        <p class="card-text">@Model.CreatedAt?.ToString("MMMM dd, yyyy")</p>
+                    </div>
+                    <div>
+                        <table class="table table-bordered table-active table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Count</th>
+                                    <th>Total Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (OrderItem orderItem in Model.OrderItems)
+                                {
+                                    counter++;
+                                    <tr>
+                                        <td>@counter</td>
+                                        <td>
+                                            <img src="~/assets/images/products/@orderItem.Product.MainImage" class="img-fluid w-50" style="height: 150px;" />
+                                        </td>
+                                        <td>@orderItem.Product.Name</td>
+                                        <td>$@orderItem.Price.ToString("F2")</td>
+                                        <td>@orderItem.Count</td>
+                                        <td>$@orderItem.TotalPrice.ToString("F2")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <form method="post" asp-area="admin" asp-controller="order" asp-action="update">
+                    <div class="form-group">
+                        <input name="id" type="hidden" value="@Model.ID" placeholder="Name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="orderStatus">Order Status</label>
+                        <select name="orderStatus" id="orderStatus" class="form-select" asp-items="new SelectList(Enum.GetValues(typeof(OrderStatus)),Model.OrderStatus)" aria-label="Default select example">
+                        </select>
+                        <span class="text-danger" asp-validation-for="OrderStatus"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Comment">Message</label>
+                        <textarea name="Comment" id="Comment" class="form-control">@Model.Comment</textarea>
+                        <span class="text-danger" asp-validation-for="Comment"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

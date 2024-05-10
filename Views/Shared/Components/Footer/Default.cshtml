@@ -1,0 +1,143 @@
+﻿@model FooterVM
+
+<footer>
+    <div class="newsletter-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="content-newsletter">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="newsletter-wrapper">
+                            <h4>Subscribe To Our Newsletter</h4>
+                            <p>Get all the latest information on Events, Sales and Offers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7">
+                    <div class="newsletter-input">
+                        <form asp-controller="subscriber" asp-action="subscribe" method="POST">
+                            <div class="form-wrapper">
+                                <input type="email" asp-for="@Model.Subscriber.Email" required placeholder="Your E-mail Address">
+                            </div>
+
+                            <button type="submit" class="btn__main">
+                                Subscribe
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="footer-main">
+                    <div class="footer-about col-lg-4">
+                        <div class="footer-logo">
+                            <img src="~/assets/images/@Model.Settings.FirstOrDefault(x=>x.Key == "FooterLogo").Value" alt="Footer Logo">
+                        </div>
+                        <p>Got Question? Call us 24/7</p>
+                        <a href="tel:1@(Model.Settings.FirstOrDefault(x => x.Key == "PhoneNumber").Value)">
+                            1-@Model.Settings.FirstOrDefault(x => x.Key == "PhoneNumber").Value
+                        </a>
+                        <p>
+                            Register now to get updates on pronot get up icons
+                            & coupons ster now toon.
+                        </p>
+                        <div class="social-wrapper">
+                            <a class="social_facebook icon" href="@(Model.Settings.FirstOrDefault(x => x.Key == "FacebookAddress").Value)" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="social_twitter icon" href="@(Model.Settings.FirstOrDefault(x => x.Key == "TwitterAddress").Value)" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="social_instagram icon" href="@(Model.Settings.FirstOrDefault(x => x.Key == "InstagramAddress").Value)" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="social_youtube icon" href="@(Model.Settings.FirstOrDefault(x => x.Key == "YoutubeAddress").Value)" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a class="social_pinterest icon" href="@(Model.Settings.FirstOrDefault(x => x.Key == "PinterestAddress").Value)" target="_blank">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-link-main col-lg-8">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="widget">
+                                <h3 class="link-title">Company</h3>
+                                <ul>
+                                    <li><a asp-controller="about" asp-action="index">About Us</a></li>
+                                    <li><a asp-controller="about" asp-action="index">Team Member</a></li>
+                                    <li><a asp-controller="about" asp-action="index">Career</a></li>
+                                    <li><a asp-controller="contact" asp-action="index">Contact Us</a></li>
+                                    <li><a asp-controller="shop" asp-action="index">Affilate</a></li>
+                                    <li><a asp-controller="account" asp-action="profile">Order History</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="widget">
+                                <h4 class="link-title">My Account</h4>
+                                <ul>
+                                    <li><a asp-controller="account" asp-action="profile">Track My Order</a></li>
+                                    <li><a asp-controller="cart" asp-action="index">View Cart</a></li>
+                                    <li><a href="#">Sign In</a></li>
+                                    <li><a asp-controller="contact" asp-action="index">Help</a></li>
+                                    <li><a asp-controller="wishlist" asp-action="index">My Wishlist</a></li>
+                                    <li><a asp-controller="contact" asp-action="index">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="widget">
+                                <h4 class="link-title">Customer Service</h4>
+                                <ul>
+                                    <li><a asp-controller="account" asp-action="profile">Payment Methods</a></li>
+                                    <li><a asp-controller="contact" asp-action="index">Money-back guarantee!</a></li>
+                                    <li><a asp-controller="account" asp-action="profile">Product Returns</a></li>
+                                    <li><a asp-controller="contact" asp-action="index">Support Center</a></li>
+                                    <li><a asp-controller="account" asp-action="profile">Shipping</a></li>
+                                    <li><a asp-controller="about" asp-action="index">Term and Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-category">
+                    @foreach (Category item in Model.Categories.Take(3))
+                    {
+                        var checkSubcategory = Model.Subcategories.Where(x => x.ParentCategoryID == item.ID);
+                        <div class="category-link">
+
+                            @if(checkSubcategory.Count() != 0)
+                            {
+                                <h6>@item.Name:</h6>
+                            }
+
+                            @foreach (Subcategory subcategory in checkSubcategory.Take(6))
+                            {
+                                <a asp-controller="shop" asp-action="index" asp-route-category="@item.ID">@subcategory.Name</a>
+                            }
+                            @if (checkSubcategory.Count() != 0)
+                            {
+                                <a asp-controller="shop" asp-action="index">View All</a>
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>Copyright © @DateTime.Now.Year Wolmart Store. All Rights Reserved.</p>
+                    </div>
+                    <div>
+                        <span>We're using safe payment for</span>
+                        <img src="~/assets/images/payment.png" alt="Payment">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

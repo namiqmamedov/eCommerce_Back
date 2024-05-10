@@ -1,0 +1,158 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Create";
+    SelectList selectListItems = new SelectList(ViewBag.Brands, nameof(Brand.ID), nameof(Brand.Name));
+    SelectList selectListItems2 = new SelectList(ViewBag.Categories, nameof(Category.ID), nameof(Category.Name));
+}
+
+<h1>Create</h1>
+<script src="~/admin/ckeditor5-build-classic/ckeditor.js"></script>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="form-label" asp-for="Name">Name</label>
+                    <input class="form-control" asp-for="Name" placeholder="Name...">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="ProductDescriptions[0].Text">Description</label>
+                    <textarea rows="40" cols="70" class="form-control" id="inputCKdesc" asp-for="ProductDescriptions[0].Text">
+                    </textarea>
+                    <span class="text-danger" asp-validation-for="ProductDescriptions[0].Text"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="ProductSpecifications[0].Model">Model</label>
+                    <input class="form-control" asp-for="ProductSpecifications[0].Model" placeholder="Model">
+                    <span class="text-danger" asp-validation-for="ProductSpecifications[0].Model"></span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="ProductSpecifications[0].Guarantee">Guarantee</label>
+                    <input class="form-control" asp-for="ProductSpecifications[0].Guarantee" placeholder="Guarantee">
+                    <span class="text-danger" asp-validation-for="ProductSpecifications[0].Guarantee"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MainFile">Main Image</label>
+                    <input class="form-control" asp-for="MainFile" placeholder="Main Image...">
+                    <span class="text-danger" asp-validation-for="MainFile"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="HoverFile">Hover Image</label>
+                    <input class="form-control" asp-for="HoverFile" placeholder="Main Image...">
+                    <span class="text-danger" asp-validation-for="HoverFile"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Files">Image</label>
+                    <input class="form-control" asp-for="Files" multiple placeholder="Main Image...">
+                    <span class="text-danger" asp-validation-for="Files"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BrandID">Select Brand</label>
+                    <select asp-for="BrandID" class="form-select" asp-items=@selectListItems aria-label="Default select example">
+                    </select>
+                    <span class="text-danger" asp-validation-for="BrandID"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CategoryID">Select Category</label>
+                    <select asp-for="CategoryID" class="form-select" asp-items=@selectListItems2 aria-label="Default select example">
+                    </select>
+                    <span class="text-danger" asp-validation-for="CategoryID"></span>
+                </div>
+
+                <div class="accordion-single js-acc-single">
+                    <div class="accordion-single-item js-acc-item is-open">
+                        <h3 class="accordion-single-title js-acc-single-trigger">
+                            <label class="main-label">
+                                Select Size
+                            </label>
+                        </h3>
+                        <div class="accordion-single-content single-content" style="max-height: 100%;">
+                            <div class="spec-base row justify-content-center">
+                                <div class="select-main d-flex gap-3 col-lg-12">
+                                    <div class="form-group col-lg-4">
+                                        <label asp-for="SizeIDs">Sizes</label>
+                                        <select name="SizeIDs" class="form-select" asp-items="new SelectList(ViewBag.Sizes,nameof(Size.ID),nameof(Size.Name))" aria-label="Default select example">
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label class="mb-2">Count</label>
+                                        <input class="form-control" asp-for="SizeCounts" value="0" placeholder="Count...">
+                                        <span class="text-danger" asp-validation-for="SizeCounts"></span>
+                                    </div>
+                                    <div class="addInputButton">
+                                        <a class="inputadding" asp-action="GetSizeCount" id="inputadding1">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-single js-acc-single">
+                    <div class="accordion-single-item js-acc-item is-open">
+                        <h3 class="accordion-single-title js-acc-single-trigger">
+                            <label class="main-label">
+                                Select Color
+                            </label>
+                        </h3>
+                        <div class="accordion-single-content single-content-color" style="max-height: 100%;">
+                            <div class="spec-base row justify-content-center">
+                                <div class="select-main d-flex gap-3 col-lg-12">
+                                    <div class="form-group col-lg-4">
+                                        <label asp-for="ColorIDs">Colors</label>
+                                        <select name="ColorIDs" class="form-select" asp-items="new SelectList(ViewBag.Colors,nameof(Color.ID),nameof(Color.Name))" aria-label="Default select example">
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label class="mb-2">Count</label>
+                                        <input class="form-control" asp-for="Counts" value="0" placeholder="Count...">
+                                        <span class="text-danger" asp-validation-for="Counts"></span>
+                                    </div>
+                                </div>
+                                <div class="select-main d-flex gap-3 col-lg-12">
+                                    <div class="form-group col-lg-4">
+                                        <label class="mb-2">Price</label>
+                                        <input class="form-control" asp-for="Prices" placeholder="Price..." value="0">
+                                        <span class="text-danger" asp-validation-for="Prices"></span>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label class="mb-2">Discounted Price</label>
+                                        <input class="form-control" asp-for="DiscountedPrices" placeholder="Discounted Price...">
+                                        <span class="text-danger" asp-validation-for="DiscountedPrices"></span>
+                                    </div>
+                                    <div class="addInputButton1">
+                                        <a class="inputadding" asp-action="GetLabelCount" id="inputadding">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    ClassicEditor
+        .create(document.querySelector('#inputCKdesc'), {
+            mediaEmbed: {
+                previewsInData: true
+            },
+            // extraPlugins: [MyCustomUploadAdapterPlugin],
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(err => {
+            console.error(err.stack);
+        });
+
+</script>

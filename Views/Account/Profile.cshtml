@@ -1,0 +1,248 @@
+﻿@model ProfileVM
+
+<div class="page-header">
+    <h1 class="page-title mb-0">My Account</h1>
+</div>
+
+<nav class="breadcrumb-nav">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumb-main">
+                <li>
+                    <a asp-controller="home" asp-action="index">Home</a>
+                </li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li>
+                    <a asp-controller="account" asp-action="profile">My Account</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="account__wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="account__detail-wrapper">
+                <div class="col-lg-3">
+                    <ul class="nav nav-tabs mb-3" id="ex4 nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active"
+                               id="ex4-tab-1"
+                               data-bs-toggle="tab"
+                               href="#ex4-tabs-1"
+                               role="tab"
+                               aria-controls="ex4-tabs-1"
+                               aria-selected="true">Account Details</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link"
+                               id="ex4-tab-2"
+                               data-bs-toggle="tab"
+                               href="#ex4-tabs-2"
+                               role="tab"
+                               aria-controls="ex4-tabs-2"
+                               aria-selected="true">Order History</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link"
+                               asp-controller="wishlist" asp-action="index">Wishlist</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link"
+                               asp-controller="account" asp-action="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content col-lg-9" id="ex4-content">
+                    <div class="tab-pane fade show active"
+                         id="ex4-tabs-1"
+                         role="tabpanel"
+                         aria-labelledby="ex4-tab-1">
+                        <div class="tab-pane" id="main-menu">
+                            <div class="icon-box content">
+                                <i class="fa-solid fa-user"></i>
+                                <h4>Account Details</h4>
+                            </div>
+
+                            <form method="POST" class="form__wrapper">
+                                <div class="text text-danger" asp-validation-summary="ModelOnly"></div>
+                                <div class="form-item">
+                                    <label>
+                                        Username *
+                                    </label>
+                                    <input disabled type="text" name="Username" value="@User.Identity.Name" class="form-control">
+                                </div>
+                                <div class="full-form">
+                                    <div class="form-item">
+                                        <label>
+                                            First name *
+                                        </label>
+                                        <input type="text" name="Name" asp-for="Name" class="form-control">
+                                        <span class="text text-danger mt-2" asp-validation-for="Name"></span>
+                                    </div>
+                                    <div class="form-item">
+                                        <label>
+                                            Last name *
+                                        </label>
+                                        <input type="text" name="Surname" asp-for="Surname" class="form-control">
+                                        <span class="text text-danger mt-2" asp-validation-for="Surname"></span>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <label>
+                                        Email address *
+                                    </label>
+                                    <input type="email" name="Email" asp-for="Email" class="form-control">
+                                    <span class="text text-danger" asp-validation-for="@Model.Email"></span>
+                                </div>
+
+                                <div class="icon-box content">
+                                    <h4>Password change</h4>
+                                </div>
+                                <div class="form-item">
+                                    <label>
+                                        Current Password leave blank to leave unchanged
+                                    </label>
+                                    <input type="password" name="CurrentPassword" class="form-control">
+                                    <span class="text text-danger mt-2" asp-validation-for="@Model.CurrentPassword"></span>
+                                </div>
+                                <div class="form-item">
+                                    <label>
+                                        New Password leave blank to leave unchanged
+                                    </label>
+                                    <input type="password" name="Password" class="form-control">
+                                    <span class="text text-danger mt-2" asp-validation-for="@Model.Password"></span>
+                                </div>
+                                <div class="form-item">
+                                    <label>
+                                        Confirm Password
+                                    </label>
+                                    <input type="password" name="ConfirmPassword" class="form-control">
+                                    <span class="text text-danger mt-2" asp-validation-for="@Model.ConfirmPassword"></span>
+                                </div>
+                                <button type="submit" class="btn__main">
+                                    Save Changes
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade show"
+                         id="ex4-tabs-2"
+                         role="tabpanel"
+                         aria-labelledby="ex4-tab-2">
+                        <div class="tab-pane" id="main-menu">
+                            <div class="icon-box content">
+                                <i class="fa-solid fa-box-open"></i>
+                                <h4>Order History</h4>
+                            </div>
+
+                            @if (Model != null && Model.Order != null)
+                            {
+                                <form class="form__wrapper">
+                                    <div class="text text-danger" asp-validation-summary="ModelOnly"></div>
+                                    <table style="font-size: 14px;" class="table table-hover table-s-triped">
+                                        <thead>
+                                            <tr class="head__first">
+                                                <th scope="col">Order Number</th>
+                                                <th scope="col">Fullname</th>
+                                                <th scope="col">Count</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Total Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (Order order in Model.Orders)
+                                            {
+
+                                                <tr>
+                                                    <th>@order.ID</th>
+                                                    <td>@order.Name @order.Surname</td>
+                                                    <td>@order.OrderItems.Sum(o => o.Count)</td>
+                                                    <td>@order.OrderStatus</td>
+                                                    <td>@order.CreatedAt?.ToString("MMMM dd, yyyy")</td>
+                                                    <td>@order.TotalPrice</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </form>
+
+                                <div class="accordion-single js-acc-single mt-5">
+                                    <div class="accordion-single-item js-acc-item">
+                                        <h3 class="accordion-single-title js-acc-single-trigger">
+                                            <label class="main-label">
+                                                Order Detail
+                                            </label>
+                                        </h3>
+                                        <div class="accordion-single-content single-content">
+                                            <div class="spec-base row justify-content-center">
+                                                <div class="select-main d-flex gap-3 col-lg-12">
+                                                    <form method="POST" class="form__wrapper mt-5 w-100">
+                                                        <div style="font-size: 14px;" class="card">
+                                                            <div class="card-body" id="order-card-body">
+                                                                <h5 class="card-title">@Model.Order.Name @Model.Order.Surname</h5>
+                                                                <p class="card-text">@Model.Order.Country.Name</p>
+                                                                <p class="card-text">@Model.Order.OrderStatus</p>
+                                                                <p class="card-text">@Model.Order?.Comment</p>
+                                                                <p class="card-text">$@Model.Order.TotalPrice.ToString("F2")</p>
+                                                                <p class="card-text">@Model.Order.AddressFirst</p>
+                                                                <p class="card-text">@Model.Order.AddressSecond</p>
+                                                                <p class="card-text">@Model.Order.Phone</p>
+                                                                <p class="card-text">@Model.Order.CreatedAt?.ToString("MMMM dd, yyyy")</p>
+                                                            </div>
+                                                            <div>
+                                                                <table class="table table-bordered table-active table-striped">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>#</th>
+                                                                            <th>Image</th>
+                                                                            <th>Name</th>
+                                                                            <th>Price</th>
+                                                                            <th>Count</th>
+                                                                            <th>Total Price</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        @{
+                                                                            int counter = 0;
+                                                                        }
+                                                                        @foreach (OrderItem orderItem in Model.Order.OrderItems)
+                                                                        {
+                                                                            counter++;
+                                                                            <tr>
+                                                                                <td>@counter</td>
+                                                                                <td>
+                                                                                    <img src="~/assets/images/products/@orderItem.Product.MainImage" class="img-fluid w-50" style="height: 100px;" />
+                                                                                </td>
+                                                                                <td>@orderItem.Product.Name</td>
+                                                                                <td>$@orderItem.Price.ToString("F2")</td>
+                                                                                <td>@orderItem.Count</td>
+                                                                                <td>$@orderItem.TotalPrice.ToString("F2")</td>
+                                                                            </tr>
+                                                                        }
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                             <h3>The order appears empty. If you wish, order the product you want immediately and have it at your door within 24 hours!</h3>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+﻿@model ContactVM
+
+<div class="page-header">
+    <h1 class="page-title mb-0">Contact Us</h1>
+</div>
+
+<nav class="breadcrumb-nav">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumb-main">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="contact__wrapper">
+    <div class="container">
+        <div class="row">
+            <h3 class="title">Contact Information</h3>
+            <p class="desc">It is very important for the customer to be aware of the customer's needs, but it is the same thing that happens at the same time</p>
+            <div class="item-wrapper">
+                <div class="item-card">
+                    <div class="icon-base">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <h4 class="icon-title">E-mail Address</h4>
+                    <p>@Model.Settings.FirstOrDefault(x => x.Key == "EmailAddress").Value</p>
+                </div>
+                <div class="item-card">
+                    <div class="icon-base">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <h4 class="icon-title">Phone Number</h4>
+                    <p>@Model.Settings.FirstOrDefault(x => x.Key == "PhoneNumber").Value</p>
+                </div>
+                <div class="item-card">
+                    <div class="icon-base">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h4 class="icon-title">Address</h4>
+                    <p>@Model.Settings.FirstOrDefault(x => x.Key == "Address").Value</p>
+                </div>
+                <div class="item-card">
+                    <div class="icon-base">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    <h4 class="icon-title">Fax</h4>
+                    <p>@Model.Settings.FirstOrDefault(x => x.Key == "Fax").Value</p>
+                </div>
+            </div>
+
+            <div class="contact__form">
+                <div class="contact__form-wrapper">
+                    <div class="col-lg-6 col-12 col-md-6">
+                        <h4>People usually ask these</h4>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-main">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            How can I cancel my order?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            It is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Why is my registration delayed?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        t is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        How can I track an order?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        It is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                        How can I get money back?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        It is very important to take care of the patient, and the patient will be followed by the patient, but they are going to go to such a time that they have to work hard and suffer a lot. Poisoned the land in fear of the fox, using the sword and the cat. Or the price
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 col-md-6">
+                        <h4>Send Us a Message</h4>
+                        <form asp-controller="contact" asp-action="contact" method="POST" class="form-message">
+                            <div class="form-item">
+                                <label>
+                                    Your name *
+                                </label>
+                                <input type="text" name="fullname" required class="form-control">
+                                <span asp-validation-for="@Model.Message.Fullname"></span>
+                            </div>
+                            <div class="form-item">
+                                <label>
+                                    Your email *
+                                </label>
+                                <input type="email" name="email" required class="form-control">
+                                <span asp-validation-for="@Model.Message.Email"></span>
+                            </div>
+                            <div class="form-item">
+                                <label>
+                                    Your message *
+                                </label>
+                                <textarea type="text" rows="7" name="text" required class="form-control"></textarea>
+                                <span asp-validation-for="@Model.Message.Text"></span>
+                            </div>
+                            <button type="submit" class="btn__main">
+                                Send Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

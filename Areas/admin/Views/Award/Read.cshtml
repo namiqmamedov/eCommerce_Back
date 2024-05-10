@@ -1,0 +1,24 @@
+﻿@model Award
+@{
+    ViewData["Title"] = "Read";
+}
+
+<h1>Info</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Text">Text</label>
+                    <input class="form-control" disabled asp-for="Text" placeholder="Text...">
+                </div>
+                <div style="width: 12.33%" class="mb-3 mt-2">
+                    <img src="~/assets/images/@Model.Logo" class="img-fluid" alt="Alternate Text" />
+                </div>
+                <a class="btn btn-primary" asp-area="admin" asp-controller="award" asp-action="index">
+                    Back to menu
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

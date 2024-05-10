@@ -1,0 +1,118 @@
+﻿@model RegisterVM
+
+<div class="modal fade modal-index" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <ul class="nav nav-tabs mb-3" id="ex2 nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active"
+                       id="ex2-tab-1"
+                       data-bs-toggle="tab"
+                       href="#ex2-tabs-1"
+                       role="tab"
+                       aria-controls="ex2-tabs-1"
+                       aria-selected="true">SIGN IN</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link"
+                       id="ex2-tab-2"
+                       data-bs-toggle="tab"
+                       href="#ex2-tabs-2"
+                       role="tab"
+                       aria-controls="ex2-tabs-2"
+                       aria-selected="false">SIGN UP</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="ex2-content">
+                <div class="tab-pane fade show active"
+                     id="ex2-tabs-1"
+                     role="tabpanel"
+                     aria-labelledby="ex2-tab-1">
+                    <div class="form-group">
+                        <label>Username or email address *</label>
+                        <input type="text" class="form-control" name="username" id="username" required="">
+                    </div>
+                    <div class="form-group">
+                        <label>Password *</label>
+                        <input type="password" class="form-control" name="password" id="password" required="">
+                    </div>
+
+                    <div class="checkboxes">
+                        <div class="checkboxes__row">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Remember Me</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="login-btn text-uppercase" type="submit">
+                        Sign In
+                    </button>
+
+                </div>
+                <form asp-controller="account" asp-action="register" method="POST" class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                    <span class="text text-danger" asp-validation-summary="ModelOnly"></span>
+                    <div class="form-group">
+                        <label>Your Email address *</label>
+                        <input type="email" class="form-control" asp-for="@Model.Email" required="">
+                    </div>
+                    <div class="form-group">
+                        <label>First Name *</label>
+                        <input type="text" class="form-control" asp-for="@Model.FirstName" required="">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name *</label>
+                        <input type="text" class="form-control" asp-for="@Model.LastName" required="">
+                    </div>
+                    <div class="form-group">
+                        <label>Username *</label>
+                        <input type="text" class="form-control" asp-for="@Model.Username" required="">
+                    </div>
+                    <div class="form-group">
+                        <label>Password *</label>
+                        <input type="password" class="form-control" asp-for="@Model.Password" id="password" required="">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirm Password *</label>
+                        <input type="password" class="form-control" asp-for="@Model.ConfirmPassword" id="password" required="">
+                    </div>
+
+                    <p>
+                        Your personal data will be used to support your experience
+                        throughout this website, to manage access to your account,
+                        and for other purposes described in our
+                        <a href="#">
+                            privacy policy.
+                        </a>
+                    </p>
+
+                    <div class="checkboxes">
+                        <div class="checkboxes__row">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">
+                                        I agree to the
+                                        <a href="#">
+                                            privacy policy
+                                        </a>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="login-btn text-uppercase" type="submit">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

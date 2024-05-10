@@ -1,0 +1,20 @@
+﻿@model Client
+@{
+    ViewData["Title"] = "Read";
+}
+
+<h1>Info</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form>
+                <div style="width: 12.33%" class="mb-3 mt-2">
+                    <img src="~/assets/images/brands/@Model.Image" class="img-fluid" alt="Alternate Text" />
+                </div>
+                <a class="btn btn-primary" asp-area="admin" asp-controller="client" asp-action="index">
+                    Back to menu
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

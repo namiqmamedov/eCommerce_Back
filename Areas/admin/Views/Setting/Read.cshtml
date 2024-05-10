@@ -1,0 +1,28 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Read";
+}
+
+<h1>Info</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    @if (Model.Key == "FooterLogo" || Model.Key == "HeaderLogo" || Model.Key == "AboutImage")
+                    {
+                        <img src="~/assets/images/@Model.Value" class="mt-3 mb-3 d-flex" />
+                        <input type="file" asp-for="File" disabled class="form-control" />
+                    }
+                    else
+                    {
+                        <input class="form-control" disabled asp-for="Value" placeholder="Name...">
+                    }
+                </div>
+                <a class="btn btn-primary mt-3" asp-area="admin" asp-controller="setting" asp-action="index">
+                    Back to menu
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

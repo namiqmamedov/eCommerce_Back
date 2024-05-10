@@ -1,0 +1,25 @@
+﻿@model Message
+@{
+    ViewData["Title"] = "Read";
+}
+
+<h1>Info</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Email">Email</label>
+                    <input class="form-control" disabled asp-for="Email" placeholder="Email...">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" asp-for="Text">Text</label>
+                    <input class="form-control" disabled asp-for="Text" placeholder="Text...">
+                </div>
+                <a class="btn btn-primary" asp-area="admin" asp-controller="message" asp-action="index">
+                    Back to menu
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

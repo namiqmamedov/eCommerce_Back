@@ -1,0 +1,63 @@
+﻿@model Dictionary<string, string>
+
+@{
+    int counter = 0;
+}
+
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <div class="d-flex">
+                <div class="col-4 mb-3">
+                    <h2>Settings</h2>
+                </div>
+            </div>
+
+            <div class="table-responsive mt-4 tbl-content">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr class="head__first">
+                            <th scope="col">#</th>
+                            <th scope="col">Key</th>
+                            <th scope="col">Value</th>
+                            <th scope="col">Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            counter++;
+
+                            <tr>
+                                <th scope="row">@counter</th>
+                                <td>@item.Key</td>
+                                @if (item.Key == "FooterLogo" || item.Key == "HeaderLogo" || item.Key == "AboutImage")
+                                {
+                                    <td>
+                                        <img class="w-25 h-25" src="~/assets/images/@item.Value" />
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>@item.Value</td>
+                                }
+                                <td>
+                                    <div class="settings-tb d-flex gap-2">
+                                        <a class="btn btn-secondary" asp-controller="setting" asp-action="read" asp-area="admin" asp-route-key="@item.Key">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                        </a>
+                                        <a class="btn btn-primary edit-btn" asp-route-key="@item.Key" asp-action="Update">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

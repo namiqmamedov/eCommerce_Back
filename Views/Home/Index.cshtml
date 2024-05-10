@@ -1,0 +1,640 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="swiper-container" class="swiper-container">
+    <div class="swiper-wrapper">
+        @foreach (Slider item in Model.Sliders)
+        {
+            <div class="swiper-slide" style="background-image: url(/assets/images/slides/@item.BackgroundImage);">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="swiper-slide item-box">
+                            @if (item.IsFirstImage)
+                            {
+                                <div id="image-wrapper" class="image-wrapper">
+                                    <img src="~/assets/images/slides/@item.Image" alt="Slider Image">
+                                </div>
+                                <div class="content-wrapper">
+                                    <h5 class="text-uppercase">@item.TopTitle</h5>
+                                    <h3>
+                                        @Html.Raw(@item.Title)
+                                    </h3>
+                                    <p class="description">
+                                        @item.Description
+                                    </p>
+                                    <a id="shop-btn" href="@(item.ShopLink)" target="_blank" class="shop-btn text-uppercase">
+                                        Shop Now
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="content-wrapper second">
+                                    <h5 class="text-uppercase">@item.TopTitle</h5>
+                                    <h3>
+                                        @Html.Raw(@item.Title)
+                                    </h3>
+                                    <p class="description">
+                                        @item.Description
+                                    </p>
+                                    <a href="@(item.ShopLink)" target="_blank" class="shop-btn text-uppercase">
+                                        Shop Now
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div id="image-wrapper" class="image-wrapper">
+                                    <img src="~/assets/images/slides/@item.Image" alt="Slider Image">
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <!-- !swiper slides -->
+    <!-- pagination dots -->
+    <div class="swiper-pagination"></div>
+    <!-- !pagination dots -->
+</section>
+
+<section class="service-main">
+    <div class="container">
+        <div class="row">
+            <div class="service-box">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-truck"></i>
+                            <div class="content">
+                                <h4 class="title">Money Back Guarantee</h4>
+                                <p>Any back within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <div class="content">
+                                <h4 class="title">Secure Payment</h4>
+                                <p>We ensure secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-award"></i>
+                            <div class="content">
+                                <h4 class="title">Customer Support</h4>
+                                <p>Call or email us 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-truck"></i>
+                            <div class="content">
+                                <h4 class="title">Money Back Guarantee</h4>
+                                <p>Any back within 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <div class="content">
+                                <h4 class="title">Secure Payment</h4>
+                                <p>We ensure secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-award"></i>
+                            <div class="content">
+                                <h4 class="title">Customer Support</h4>
+                                <p>Call or email us 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="deal-item">
+    <div class="container">
+        <div class="row">
+            <div class="item-base">
+                <div class="left-side">
+                    <h2>Deals Of The Day</h2>
+                    <div class="countdown-end">
+                        <label>Offer Ends in: </label>
+                        <span id="timer"></span>
+                    </div>
+                </div>
+                <div class="btn-product">
+                    <a asp-controller="shop" asp-action="index">
+                        More Products
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="deal-wrapper">
+                <div class="swiper-wrapper product-wrapper">
+                    @foreach (Product item in Model.Products.Where(x => x.ProductColors.Any(x => x.DiscountedPrice != null)).Take(12))
+                    {
+                        <div class="swiper-slide item-wrapper">
+                            @await Component.InvokeAsync("Product", item)
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="banner-main">
+                <div class="banner-box">
+                    <div class="banner-content">
+                        <h3>Electronics</h3>
+                        <div class="text-uppercase">
+                            Starting at
+                            <strong>
+                                $125.00
+                            </strong>
+                        </div>
+                        <hr />
+                        <a asp-controller="shop" asp-action="index">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <img src="/assets/images/banner-7.jpg" alt="">
+                </div>
+                <div class="banner-box second">
+                    <div class="banner-content">
+                        <h3>Cosmetic Sets</h3>
+                        <div class="text-uppercase">
+                            SALE UP TO
+                            <strong>
+                                30% OFF
+                            </strong>
+                        </div>
+                        <hr />
+                        <a asp-controller="shop" asp-action="index">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <img src="/assets/images/banner-8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="electronic-main">
+    <div class="container">
+        <div class="row">
+            <div class="electronic-tabs">
+                <div class="electronic-wrapper">
+                    <h2 class="title">Consumer Electronics</h2>
+                    <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1"
+                               role="tab" aria-controls="ex1-tabs-1" aria-selected="true">New Arrivals</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab"
+                               aria-controls="ex1-tabs-2" aria-selected="false">Best Seller</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex1-tab-3" data-bs-toggle="tab" href="#ex1-tabs-3" role="tab"
+                               aria-controls="ex1-tabs-3" aria-selected="false">Most Popular</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                               aria-controls="ex1-tabs-1" aria-selected="false">View All</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="ex1-content">
+                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                         aria-labelledby="ex1-tab-1">
+                        <div class="product-wrapper">
+                            <div class="item-wrapper base">
+                                @{
+                                    var firstItem = Model.Products.OrderBy(x => x.CreatedAt).FirstOrDefault();
+                                }
+                                @if (firstItem != null)
+                                {
+                                    <div class="product">
+                                        @await Component.InvokeAsync("Product", firstItem)
+                                    </div>
+                                }
+                            </div>
+                            <div class="item-main">
+                                @foreach (Product item in Model.Products.OrderBy(x => x.CreatedAt).Skip(1).Take(6))
+                                {
+                                    <div class="item-wrapper">
+                                        @await Component.InvokeAsync("Product", item)
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <div class="product-wrapper">
+                            <div class="item-wrapper base">
+                                @{
+                                    var bestItem = Model.Products.OrderByDescending(x => x.Count).FirstOrDefault();
+                                }
+                                @if (bestItem != null)
+                                {
+                                    <div class="product">
+                                        @await Component.InvokeAsync("Product", bestItem)
+                                    </div>
+                                }
+                            </div>
+                            <div class="item-main">
+                                @foreach (Product item in Model.Products.OrderByDescending(x => x.Count).Skip(1).Take(6))
+                                {
+                                    <div class="item-wrapper">
+                                        @await Component.InvokeAsync("Product", item)
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                        <div class="product-wrapper">
+                            <div class="item-wrapper base">
+                                @{
+                                    var popularItem = Model.Products.OrderByDescending(x => x.Feedbacks.Any() ? x.Feedbacks.Average(f => f.Rating) : -1).FirstOrDefault();
+                                }
+                                @if (popularItem != null)
+                                {
+                                    <div class="product">
+                                        @await Component.InvokeAsync("Product", popularItem)
+                                    </div>
+                                }
+                            </div>
+                            <div class="item-main">
+                                @foreach (Product item in Model.Products.OrderByDescending(x => x.Feedbacks.Any() ? x.Feedbacks.Average(f => f.Rating) : -1).Take(6))
+                                {
+                                    <div class="item-wrapper">
+                                        @await Component.InvokeAsync("Product", item)
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="category-product">
+    <div class="container">
+        <div class="row">
+            <div id="banner-main">
+                <div class="category-wrapper col-md-5">
+                    <div class="box-wrapper">
+                        <h2>Clothes & Fashion Apparel</h2>
+                        <ul>
+                            @foreach (Subcategory item in Model.Subcategories.Where(x => x.ParentSubcategoryID == 10))
+                            {
+                                <li>
+                                    <a asp-controller="shop" asp-action="index" asp-route-category="@item.ParentCategoryID">
+                                        @item.Name
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+
+                        <a class="shop-btn" asp-controller="shop" asp-action="category" asp-route-category="10">
+                            Browse All
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-main col-md-7">
+                    <div class="banner-box">
+                        <div class="banner-content">
+                            <div class="banner-top">
+                                <h5>
+                                    Flash Sale
+                                    <strong>50% Off</strong>
+                                </h5>
+                                <h3>Fashion Figure Skate Sale</h3>
+                                <p>Only until the end of this week.</p>
+                            </div>
+
+                            <a asp-controller="shop" asp-action="index" class="shop-btn">
+                                Shop Now
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <img src="~/assets/images/banner-9.jpg" alt="Banner Image">
+                    </div>
+                    <div id="deal-wrapper" class="deal-wrapper">
+                        <div class="swiper-wrapper product-wrapper">
+                            @foreach (Product item in Model.Products.Where(x => x.CategoryID == 3).Take(9))
+                            {
+                                <div class="swiper-slide item-wrapper">
+                                    @await Component.InvokeAsync("Product", item)
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div id="banner-center" class="banner-main">
+                <div class="banner-box">
+                    <div class="banner-content">
+                        <h5 class="text-uppercase">New Arrivals</h5>
+                        <h3>Sport Outfits</h3>
+                        <hr />
+                        <div>
+                            From
+                            <strong>
+                                $150.00
+                            </strong>
+                        </div>
+                    </div>
+                    <img src="~/assets/images/banner-10.jpg" alt="Banner Image">
+                </div>
+                <div class="banner-box second">
+                    <div class="banner-content right">
+                        <h5 class="text-uppercase">Smartwatches</h5>
+                        <h3>Sale up to 20% Off</h3>
+                        <hr />
+                        <div>
+                            Starting at
+                            <strong>
+                                $270.00
+                            </strong>
+                        </div>
+                    </div>
+                    <img src="~/assets/images/banner-11.jpg" alt="Banner Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="category-product">
+    <div class="container">
+        <div class="row">
+            <div id="banner-main">
+                <div class="category-wrapper">
+                    <div class="box-wrapper">
+                        <h2>Laptops & Computers</h2>
+                        <ul>
+                            @foreach (Subcategory item in Model.Subcategories.Where(x => x.ParentSubcategoryID == 45))
+                            {
+                                <li>
+                                    <a asp-controller="shop" asp-action="index" asp-route-category="@item.ParentCategoryID">
+                                        @item.Name
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                        <a class="shop-btn" asp-controller="shop" asp-action="index" asp-route-category="3">
+                            Browse All
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div class="banner-box">
+                        <div class="banner-content">
+                            <div class="banner-top">
+                                <h5>
+                                    From Online Store
+                                </h5>
+                                <h3>
+                                    Xbox One's
+                                    <span>Limited</span>
+                                    Edition
+                                </h3>
+                                <a href="#" class="text-uppercase">
+                                    View Detail
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <img id="banner_id" src="/assets/images/banner-12.jpg" alt="Banner Image">
+                    </div>
+                    <div id="deal-wrapper" class="deal-wrapper">
+                        <div class="swiper-wrapper product-wrapper">
+                            @foreach (Product item in Model.Products.Where(x => x.CategoryID == 3).Take(9))
+                            {
+                                <div class="swiper-slide item-wrapper">
+                                    @await Component.InvokeAsync("Product", item)
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-bottom">
+    <div class="container">
+        <div class="row">
+            <div id="banner-main">
+                <div class="banner-box">
+                    <div class="banner-content">
+                        <div class="banner-top">
+                            <div>
+                                Save Big on
+                                <strong>50% Off</strong>
+                            </div>
+                            <h3>Cameras and Leans Sale</h3>
+                        </div>
+
+                        <a asp-controller="shop" asp-action="index" class="shop-btn">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <img src="~/assets/images/banner-13.jpg" alt="Banner Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="deal-item">
+    <div class="container">
+        <div class="row">
+            <div class="item-base">
+                <div class="left-side">
+                    <h2>Top Rated Products</h2>
+                </div>
+                <div class="btn-product">
+                    <a asp-controller="shop" asp-action="index">
+                        More Products
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="deal-wrapper">
+                <div class="swiper-wrapper product-wrapper">
+                    @foreach (Product item in Model.Products.Where(x => x.Feedbacks.Any()).Take(12))
+                    {
+                        var maxRating = item.Feedbacks.Max(feedback => feedback.Rating);
+                        if (maxRating > 0)
+                        {
+                            <div class="swiper-slide item-wrapper">
+                                @await Component.InvokeAsync("Product", item)
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (Model.ViewVMs.Count() != 0)
+{
+    <section class="recent-views">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Your Recent Views</h2>
+                <div class="recent-wrapper">
+                    <div class="swiper-wrapper recent-box">
+                        @foreach (ViewVM item in Model.ViewVMs)
+                        {
+                            <div class="swiper-slide item-box">
+                                <img src="~/assets/images/products/@item.Image" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <a asp-controller="shop" asp-action="detail" asp-route-id="@item.ProductID" class="text">@item.Title</a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+<section class="service-main">
+    <div class="container">
+        <div class="row">
+            <h2 class="title__main">Our Clients</h2>
+            <div id="service-box">
+                <div class="swiper-wrapper">
+                    @foreach (Client item in Model.Clients)
+                    {
+                        <div class="swiper-slide">
+                            <div class="icon-box">
+                                <img src="~/assets/images/brands/@item.Image" alt="Brand">
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script>
+        var count = @Model.Settings.FirstOrDefault(x => x.Key == "OfferEnd").Value;
+    var counter = setInterval(timer, 1000);
+    function timer() {
+        count = count - 1;
+        if (count <= 0) {
+            clearInterval(counter);
+            return;
+        }
+        let varDay = Math.floor(count / 86400)
+        let varHour = Math.floor(count / 3600) % 24
+        let varMin = Math.floor(count / 60) % 60
+        let varSec = count % 60
+
+        countD = varDay;
+
+        if (varHour >= 10) {
+            countH = varHour;
+        } else {
+            countH = '0' + varHour;
+        }
+
+        if (varMin >= 10) {
+            countM = varMin;
+        } else {
+            countM = '0' + varMin;
+        }
+
+        if (varSec == 60) {
+            countS = '00';
+        } else if (varSec >= 10) {
+            countS = varSec;
+        } else {
+            countS = '0' + varSec;
+        }
+
+        document.getElementById("timer").innerHTML = countD + ':' + countH + ':' + countM + ':' + countS;
+    }
+
+    //Scroll back to top
+
+    let progressPath = document.getElementById("progress-path");
+    let progressWrap = document.getElementById("progress-wrap");
+    let pathLength = progressPath.getTotalLength();
+    progressPath.style.transition = progressPath.style.webkitTransition = "none";
+    progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.getBoundingClientRect();
+    progressPath.style.transition = progressPath.style.webkitTransition =
+        "stroke-dashoffset 10ms linear";
+
+    const onScollEvent = function (event) {
+        let scroll = window.scrollY;
+        let height = document.body.scrollHeight - window.innerHeight;
+        let progress = pathLength - (scroll * pathLength) / height;
+        progressPath.style.strokeDashoffset = progress;
+
+        let offset = 50;
+        if (window.scrollY > offset) {
+            progressWrap.classList.add("active-progress");
+        } else {
+            progressWrap.classList.remove("active-progress");
+        }
+    };
+
+    onScollEvent();
+    window.onscroll = onScollEvent;
+    progressWrap.onclick = function (event) {
+        window.scroll({ top: 0, behavior: "smooth" });
+        return false;
+    };
+
+</script>
+}

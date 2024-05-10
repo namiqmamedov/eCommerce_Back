@@ -1,0 +1,36 @@
+﻿@model PagiNationList<Message>
+
+@{
+    int counter = Model.PageIndex == 1 ? 0 : (Model.PageIndex - 1) * 5;
+}
+
+<table class="table table-hover table-s-triped">
+    <thead>
+        <tr class="head__first">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col" style="text-align: end;padding-right: 61px;">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Message item in Model)
+        {
+            counter++;
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@item.Fullname</td>
+                <td>@item.Email</td>
+                <td>
+                    <div class="settings-tb d-flex gap-2 justify-content-end">
+                        <a class="btn btn-secondary" asp-controller="message" asp-action="read" asp-area="admin" asp-route-id="@item.ID">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

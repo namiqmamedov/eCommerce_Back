@@ -1,0 +1,20 @@
+﻿@model Client
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="File">Image</label>
+                    <input class="form-control mb-3" asp-for="File" placeholder="Image...">
+                    <span class="text-danger" asp-validation-for="File"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>

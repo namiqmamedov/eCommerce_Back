@@ -1,0 +1,1533 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Wolmart.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Wolmart.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\LICENSE.md",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\README.md",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\README.md"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\ckeditor.d.ts",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\ckeditor.d.ts"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\ckeditor.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\ckeditor.js.map",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\ckeditor.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\index.html",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\index.html"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\sample\\css\\sample.css",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\sample\\css\\sample.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\sample\\img\\bg.png",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\sample\\img\\bg.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\sample\\img\\github.svg",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\sample\\img\\github.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\sample\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\sample\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\sample\\img\\umbrellas.jpg",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\sample\\img\\umbrellas.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\af.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\af.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ar.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ar.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ast.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ast.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\az.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\az.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\bg.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\bg.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\bn.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\bn.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\bs.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\bs.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ca.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ca.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\cs.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\cs.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\da.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\da.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\de-ch.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\de-ch.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\de.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\de.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\el.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\el.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\en-au.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\en-au.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\en-gb.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\en-gb.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\eo.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\eo.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\es-co.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\es-co.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\es.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\es.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\et.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\et.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\eu.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\eu.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\fa.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\fa.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\fi.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\fi.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\fr.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\fr.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\gl.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\gl.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\gu.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\gu.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\he.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\he.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\hi.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\hi.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\hr.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\hr.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\hu.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\hu.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\hy.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\hy.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\id.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\id.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\it.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\it.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ja.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ja.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\jv.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\jv.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\km.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\km.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\kn.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\kn.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ko.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ko.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ku.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ku.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\lt.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\lt.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\lv.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\lv.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ms.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ms.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\nb.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\nb.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ne.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ne.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\nl.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\nl.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\no.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\no.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\oc.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\oc.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\pl.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\pl.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\pt-br.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\pt-br.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\pt.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\pt.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ro.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ro.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ru.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ru.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\si.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\si.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\sk.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\sk.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\sl.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\sl.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\sq.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\sq.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\sr-latn.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\sr-latn.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\sr.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\sr.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\sv.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\sv.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\th.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\th.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\tk.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\tk.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\tr.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\tr.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\tt.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\tt.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ug.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ug.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\uk.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\uk.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\ur.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\ur.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\uz.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\uz.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\vi.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\vi.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\zh-cn.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\zh-cn.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\ckeditor5-build-classic\\translations\\zh.js",
+      "PackagePath": "staticwebassets\\admin\\ckeditor5-build-classic\\translations\\zh.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\app.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\css\\login.css",
+      "PackagePath": "staticwebassets\\admin\\css\\login.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\css\\style-for.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style-for.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\css\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\admin\\css\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\feathere8ab.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\feathere8ab.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\feathere8ab.svg",
+      "PackagePath": "staticwebassets\\admin\\fonts\\feathere8ab.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\feathere8ab.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\feathere8ab.ttf"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\feathere8ab.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\feathere8ab.woff"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-brands-400d41d.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-regular-400d41d.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\fonts\\la-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\admin\\fonts\\la-solid-900d41d.eot"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-10.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-10.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-11.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-11.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-12.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-12.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-13.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-13.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-14.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-14.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-15.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-15.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-5.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-6.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-7.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-8.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\avatars\\thumb-9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatars\\thumb-9.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\bug_hunter.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\bug_hunter.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\istockphoto-1223671392-612x612.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\istockphoto-1223671392-612x612.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\logo-gs-mono.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\logo-gs-mono.svg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\logo\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\images\\logo\\favicon.ico"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\logo\\logo-fold.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo\\logo-fold.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\logo\\logo-white.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo\\logo-white.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo\\logo.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\bg-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\bg-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\bg-3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\bg-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\bg-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\bg-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-1.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-2.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-3.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-5.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-6.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\others\\img-7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\others\\img-7.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\en_US.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\en_US.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\fr_FR.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\fr_FR.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\german.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\german.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\italy.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\italy.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\japan.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\japan.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\spain.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\spain.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\thumb-1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\thumb-1.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\thumb-2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\thumb-2.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\thumb-3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\thumb-3.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\thumb-4.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\thumb-4.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\thumb-5.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\thumb-5.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\images\\thumbs\\us.png",
+      "PackagePath": "staticwebassets\\admin\\images\\thumbs\\us.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\app.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\app.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\custom.js",
+      "PackagePath": "staticwebassets\\admin\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\calendar.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\calendar.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\chart.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\chart.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\chat.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\chat.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\dashboard.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\dashboard.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\form-validation.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\form-validation.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\icon.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\icon.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\mail.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\mail.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\pages\\user-list.js",
+      "PackagePath": "staticwebassets\\admin\\js\\pages\\user-list.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\js\\vendors.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\vendors.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\apexcharts\\dist\\apexcharts.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\apexcharts\\dist\\apexcharts.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\apexcharts\\dist\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\apexcharts\\dist\\apexcharts.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\datatables\\dataTables.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\datatables\\dataTables.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\datatables\\dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\datatables\\dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\fullcalendar\\lib\\main.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\fullcalendar\\lib\\main.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\fullcalendar\\lib\\main.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\fullcalendar\\lib\\main.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\jquery-validation\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\jquery-validation\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\perfect-scrollbar\\css\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\admin\\vendors\\perfect-scrollbar\\css\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\admin\\vendors\\quill\\quill.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendors\\quill\\quill.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\1.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\2.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\3.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\4.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\6ebda22d-e722-44af-899c-76e9617ba641_202404052336478363_footer-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\6ebda22d-e722-44af-899c-76e9617ba641_202404052336478363_footer-logo.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\about_us.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about_us.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\about_us_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about_us_2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\about_us_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\about_us_3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-10.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-11.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-12.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-13.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-14.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-15.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-5.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-6.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-7.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-8.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\banner-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\banner-9.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\1.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\2.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\3.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\4.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\5.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\6.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\7.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\8.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\brands\\9f5157f9-396b-440c-9620-7ff11c3ee08c_202404012022114535_3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\brands\\9f5157f9-396b-440c-9620-7ff11c3ee08c_202404012022114535_3.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-10.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-11.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-12.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-13.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-14.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-15.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-5.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-6.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-7.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-8.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\banner-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\banner-9.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-11.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-22.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-22.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-33.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-33.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-5.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-6.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-7.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-8.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\categories\\category-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\category-9.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\default-profile.png",
+      "PackagePath": "staticwebassets\\assets\\images\\default-profile.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\02261e06-7473-4489-954c-32c89baa641c_202404050312457628_4-4 (1).jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\02261e06-7473-4489-954c-32c89baa641c_202404050312457628_4-4 (1).jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\0697124c-94e6-4718-a6f4-df5f395eaade_202405110143037426_as.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\0697124c-94e6-4718-a6f4-df5f395eaade_202405110143037426_as.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\094c03c1-4f7f-4ec8-ad1f-b63f30df0b7f_202405110105457954_maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\094c03c1-4f7f-4ec8-ad1f-b63f30df0b7f_202405110105457954_maxresdefault.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\12b8156e-d3d3-4aad-88d8-93355eb91603_202405110215218498_lean01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\12b8156e-d3d3-4aad-88d8-93355eb91603_202405110215218498_lean01.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\22632339-64d5-4370-8db5-e50ae1f32d26_202405110143496638_maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\22632339-64d5-4370-8db5-e50ae1f32d26_202405110143496638_maxresdefault.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\58d6e4a6-42e8-4d2a-90a0-f02b5c728ddf_202404022056352072_ski.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\58d6e4a6-42e8-4d2a-90a0-f02b5c728ddf_202404022056352072_ski.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\65672436-a18f-4e4a-8174-3a2293a8422f_202404021924087842_man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\65672436-a18f-4e4a-8174-3a2293a8422f_202404021924087842_man.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\6d828f2f-2989-4c2e-8332-a56960516a25_202404021919598788_man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\6d828f2f-2989-4c2e-8332-a56960516a25_202404021919598788_man.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\955322e7-5506-403e-8b8a-b3347719b2fc_202404021922304082_man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\955322e7-5506-403e-8b8a-b3347719b2fc_202404021922304082_man.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\98a7e07e-c3b8-46c1-866b-13104c49aeec_202405110121565812_lean01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\98a7e07e-c3b8-46c1-866b-13104c49aeec_202405110121565812_lean01.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\d2b8df50-0041-43d8-ab68-9ed80114205c_202404021928445808_ski.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\d2b8df50-0041-43d8-ab68-9ed80114205c_202404021928445808_ski.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\d81468b4-54af-4718-8253-08c0739d82cd_202404050316196693_4-4 (1).jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\d81468b4-54af-4718-8253-08c0739d82cd_202404050316196693_4-4 (1).jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\e9791416-e378-432a-8b9d-04a9ac5ff8e2_202404021926156489_ski.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\e9791416-e378-432a-8b9d-04a9ac5ff8e2_202404021926156489_ski.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\eee952f9-f8d7-44f8-9e7f-a8604717bbe6_202405110142067274_maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\eee952f9-f8d7-44f8-9e7f-a8604717bbe6_202405110142067274_maxresdefault.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\f06b154a-aa34-4211-9227-f3ffbdd77f84_202405110106235858_lean01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\f06b154a-aa34-4211-9227-f3ffbdd77f84_202405110106235858_lean01.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\feedbacks\\f7b75c25-b957-445e-8b0d-2dfccf0ecb26_202405110148492098_lean01.png",
+      "PackagePath": "staticwebassets\\assets\\images\\feedbacks\\f7b75c25-b957-445e-8b0d-2dfccf0ecb26_202405110148492098_lean01.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\footer-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\footer-logo.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\header-logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\header-logo.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\payment.png",
+      "PackagePath": "staticwebassets\\assets\\images\\payment.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-1-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-1-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-2-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-2-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-2-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-2-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-3-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-3-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-3-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-3-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-5.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1-800x900.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1-800x900.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\1_org_zoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\1_org_zoom.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\2-800x900.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\2-800x900.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\2_org_zoom.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\2_org_zoom.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-1-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-1-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-2-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-2-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-2-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-2-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-3-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-3-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-3-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-3-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-4-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-4-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-4-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-4-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-5-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-5-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-5-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-5-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-6-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-6-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-6-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-6-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-7-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-7-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-7-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-7-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\3-800x900.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\3-800x900.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-1-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-1-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-4-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-4-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-4-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-4-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-4-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-4-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\4-800x900.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\4-800x900.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\5-1-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5-1-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\5-1-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5-1-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\5-3-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5-3-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\5-3-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5-3-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\5-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5-4.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\products\\5-800x900.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\products\\5-800x900.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\4c08a87b-c5ee-469b-88ad-125bf47278f7_202404021853252183_man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\4c08a87b-c5ee-469b-88ad-125bf47278f7_202404021853252183_man.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\man.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\man.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\ski.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\ski.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\slide-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\slide-1.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\slide-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\slide-2.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\slide-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\slide-3.jpg"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\images\\slides\\woman.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slides\\woman.png"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\accordion.js",
+      "PackagePath": "staticwebassets\\assets\\js\\accordion.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\countdown.js",
+      "PackagePath": "staticwebassets\\assets\\js\\countdown.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\drawer.js",
+      "PackagePath": "staticwebassets\\assets\\js\\drawer.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\photoswipe.js",
+      "PackagePath": "staticwebassets\\assets\\js\\photoswipe.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\assets\\js\\swiper.js",
+      "PackagePath": "staticwebassets\\assets\\js\\swiper.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\about.css",
+      "PackagePath": "staticwebassets\\styles\\about.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\accordion.css",
+      "PackagePath": "staticwebassets\\styles\\accordion.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\cart.css",
+      "PackagePath": "staticwebassets\\styles\\cart.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\checkout.css",
+      "PackagePath": "staticwebassets\\styles\\checkout.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\contact.css",
+      "PackagePath": "staticwebassets\\styles\\contact.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\drawer.css",
+      "PackagePath": "staticwebassets\\styles\\drawer.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\dropdown.css",
+      "PackagePath": "staticwebassets\\styles\\dropdown.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\index.css",
+      "PackagePath": "staticwebassets\\styles\\index.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\my-account.css",
+      "PackagePath": "staticwebassets\\styles\\my-account.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\product-detail.css",
+      "PackagePath": "staticwebassets\\styles\\product-detail.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\shop-sidebar.css",
+      "PackagePath": "staticwebassets\\styles\\shop-sidebar.css"
+    },
+    {
+      "Id": "D:\\repos\\C#\\Wolmart.MVC\\wwwroot\\styles\\swiper.css",
+      "PackagePath": "staticwebassets\\styles\\swiper.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Wolmart.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Wolmart.MVC.props",
+      "PackagePath": "build\\Wolmart.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Wolmart.MVC.props",
+      "PackagePath": "buildMultiTargeting\\Wolmart.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Wolmart.MVC.props",
+      "PackagePath": "buildTransitive\\Wolmart.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

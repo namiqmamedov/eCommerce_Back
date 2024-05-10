@@ -1,0 +1,176 @@
+.about__top {
+  padding-top: 60px;
+}
+.about__top h4 {
+  font-size: 40px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.about__top p {
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 40%;
+  margin: 0 auto;
+}
+.about__top img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.about__center {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 90px;
+}
+.about__center .about__box {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.about__center .about__box span {
+  font-size: 60px;
+  color: #cccccc;
+  font-weight: bold;
+}
+.about__center .about__box h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.about__center .about__box p {
+  font-size: 14px;
+  max-width: 62%;
+  text-align: center;
+  margin: 0 auto;
+}
+.about__center .image-box {
+  text-align: end;
+}
+.about__center .title {
+  font-size: 34px;
+  max-width: 85%;
+  font-weight: bold;
+}
+.about__center .accordion {
+  padding-right: 22px;
+  padding-top: 20px;
+}
+.about__center .accordion-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.about__center .accordion-item button {
+  font-size: 14px;
+  font-weight: bold;
+}
+.about__center .accordion-item .accordion-body {
+  font-size: 14px;
+}
+.about__center img {
+  width: 80%;
+  margin-left: auto;
+  border-radius: 12px;
+}
+
+.about__awards {
+  background: #FAFAFB;
+  margin-top: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about__awards .about-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about__awards .about-item .award-title {
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.about__awards .about-item .award_box {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.about__awards .about-item .award_box .award-item {
+  text-align: center;
+}
+.about__awards .about-item .award_box .award-item .award-title {
+  font-weight: bold;
+  text-align: center;
+}
+.about__awards .about-item .award_box p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    max-width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+.about__awards .about-item .award_box img {
+  width: 106px;
+  height: 106px;
+  text-align: center;
+}
+.about__awards .col-lg-6 img {
+  border-radius: 12px;
+  width: 92%;
+}
+.about__awards .col-lg-6 h4 {
+  font-size: 34px;
+  font-weight: bold;
+  max-width: 82%;
+}
+.about__awards .col-lg-6 p {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  padding-top: 10px;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__top p {
+    max-width: 100%;
+  }
+  .about__top h4 {
+    font-size: 23px;
+  }
+  .about-item {
+    gap: 2rem;
+  }
+  .about-item img {
+    width: 100%;
+  }
+  .about-item h4 {
+    font-size: 23px !important;
+  }
+  .award_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about__center .title {
+    font-size: 23px;
+  }
+  .about__center .image-box {
+    text-align: start;
+    padding-top: 20px;
+  }
+  .about__center .image-box img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=about.css.map */

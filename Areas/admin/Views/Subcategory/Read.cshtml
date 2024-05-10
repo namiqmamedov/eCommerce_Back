@@ -1,0 +1,34 @@
+﻿@model Subcategory
+@{
+    ViewData["Title"] = "Read";
+    SelectList selectListItems = new SelectList(ViewBag.Subcategories, nameof(Subcategory.ID), nameof(Subcategory.Name));
+    SelectList selectListItems2 = new SelectList(ViewBag.Categories, nameof(Category.ID), nameof(Category.Name));
+}
+
+<h1>Read</h1>
+<div class="content">
+    <div class="main product-index">
+        <div class="row">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="form-label" asp-for="Name">Subcategory Name</label>
+                    <input disabled class="form-control" asp-for="Name" placeholder="Name...">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ParentCategoryID">Select Category</label>
+                    <select disabled asp-for="ParentCategoryID" class="form-select" asp-items=@selectListItems2 aria-label="Default select example">
+                    </select>
+                    <span class="text-danger" asp-validation-for="ParentCategoryID"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ParentSubcategoryID">Select Parent Subcategory</label>
+                    <select disabled asp-for="ParentSubcategoryID" class="form-select" asp-items=@selectListItems aria-label="Default select example">
+                    </select>
+                    <span class="text-danger" asp-validation-for="ParentSubcategoryID"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+            </form>
+        </div>
+    </div>
+</div>

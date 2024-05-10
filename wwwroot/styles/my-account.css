@@ -1,0 +1,78 @@
+.account__detail-wrapper #order-card-body .card-title {
+    padding-left: 15px !important;
+}
+
+.account__detail-wrapper #order-card-body .card-text {
+    padding-left: 15px !important;
+    padding: 0;
+}
+
+.account__detail-wrapper {
+  display: flex;
+  gap: 2rem;
+  padding-top: 40px;
+}
+.account__detail-wrapper .nav-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+.account__detail-wrapper .nav-tabs {
+  flex-direction: column;
+  border: none;
+}
+.account__detail-wrapper .nav-tabs .nav-link {
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: none;
+}
+.account__detail-wrapper .nav-tabs .nav-link.active {
+  border: none;
+  background: none;
+}
+.account__detail-wrapper .tab-content .icon-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.account__detail-wrapper .tab-content .icon-box svg {
+  font-size: 22px;
+}
+.account__detail-wrapper .tab-content .icon-box h4 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.account__detail-wrapper .tab-content .full-form {
+  display: flex;
+  gap: 2rem;
+}
+.account__detail-wrapper .tab-content .full-form .form-item {
+  width: 50%;
+}
+.account__detail-wrapper .tab-content .form-item {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.account__detail-wrapper .tab-content .form-item label {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.account__detail-wrapper .tab-content .form-item .form-control {
+  padding: 8.5px 20px;
+  font-size: 16px;
+}
+
+.account__detail-wrapper .tab-content .text.text-danger{
+    font-size: 14px;
+}
+
+    @media screen and (max-width: 768px) {
+        .account__detail-wrapper {
+    flex-direction: column !important;
+  }
+}/*# sourceMappingURL=my-account.css.map */

@@ -1,0 +1,9 @@
+﻿@model List<ProductImage>
+
+@foreach (ProductImage productImage in Model)
+{
+    <div style="width: 12.33%">
+        <a class="deleteProdImg d-flex justify-content-end" asp-area="admin" asp-controller="product" asp-action="removeimg" asp-route-id="@productImage.ID"><i class="fa-regular fa-circle-xmark"></i></a>
+        <img src="~/assets/images/products/@productImage.Image" class="img-fluid" alt="Alternate Text" />
+    </div>
+}

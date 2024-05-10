@@ -1,0 +1,401 @@
+﻿@model HeaderVM
+@using Microsoft.AspNetCore.Identity
+@inject ILayoutServices layoutservices
+@inject UserManager<AppUser> userManager
+
+@{
+    Dictionary<string, string> settings = await layoutservices.GetSettingAsync();
+    List<CartVM> cartVMs = await layoutservices.GetCart();
+    AppUser appUser = null;
+    if (User.Identity.IsAuthenticated)
+    {
+        appUser = userManager.Users.FirstOrDefault(a => a.UserName == User.Identity.Name);
+    }
+}
+
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="header-wrapper d-flex align-items-center justify-content-between">
+                    <p>WELCOME TO WOLMART STORE MESSAGE OR REMOVE IT!</p>
+                    <div class="header-right d-flex">
+                        <div class="language-box d-flex">
+                            <div class="nav-wrapper">
+                                <div class="sl-nav">
+                                    <ul>
+                                        <li>
+                                            USD <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            <div class="triangle"></div>
+                                            <ul>
+                                                <li><a href="#">USD</a></li>
+                                                <li><a href="#">EUR</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sl-nav">
+                                    <ul>
+                                        <li>
+                                            ENG <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            <div class="triangle"></div>
+                                            <ul>
+                                                <li><a href="#">ENG</a></li>
+                                                <li><a href="#">FRA</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="divider"></span>
+                        <div class="main-forward">
+                            <a asp-controller="contact" asp-action="index">Contact Us</a>
+                            <a asp-controller="account" asp-action="profile">My Account</a>
+                        </div>
+                        <div class="modal-box">
+                            <i class="fa-regular fa-user"></i>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a asp-controller="account" asp-action="profile">@appUser?.UserName</a>
+                            }
+                            else
+                            {
+                                <a data-bs-toggle="modal" data-bs-target="#loginModal" data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1" class="c-logo">
+                                    Sign In /
+                                </a>
+                                <a data-bs-toggle="modal" data-bs-target="#loginModal" data-tilt data-tilt-glare="true" data-tilt-transition="true" data-tilt-scale="1.1" class="c-logo">
+                                    Register
+                                </a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <div class="row">
+                <div class="header-wrapper d-flex align-items-center justify-content-between">
+                    <div class="left-side d-flex align-items-center">
+                        <a asp-controller="home" asp-action="index" class="header-logo">
+                            <img src="~/assets/images/@settings.FirstOrDefault(x => x.Key == "HeaderLogo").Value" alt="Header Logo">
+                        </a>
+                        <div class="menu-list">
+                            <ul class="d-flex">
+                                <li>
+                                    <a asp-controller="home" asp-action="index">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="shop" asp-action="index">
+                                        Shop
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="about" asp-action="index">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a asp-controller="contact" asp-action="index">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="contact-phone d-flex align-items-center">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="phone-box">
+                                <h4>Live Chat <span>or :</span></h4>
+                                <a href="tel:1@(settings.FirstOrDefault(x => x.Key == "PhoneNumber").Value)">
+                                    @settings.FirstOrDefault(x => x.Key == "PhoneNumber").Value
+                                </a>
+                            </div>
+                        </div>
+                        <span class="divider"></span>
+                        <div class="item-box d-flex">
+                            <a asp-controller="wishlist" asp-action="index" class="item">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>Wishlist</span>
+                            </a>
+                            <a asp-controller="shop" asp-action="index" class="item">
+                                <i class="fa-solid fa-code-compare"></i>
+                                <span>Compare</span>
+                            </a>
+                            <div class="sl-nav">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        Cart
+                                        <div class="cart-info">
+                                            @await Html.PartialAsync("_CartPartial", cartVMs)
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <div class="inner-wrap d-flex align-items-center">
+                        <div class="header-left  d-flex align-items-center">
+                            <div class="dropdown category-dropdown has-border" data-visible="true">
+                                <a href="#" class="category-toggle" role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="true" data-display="static"
+                                   title="Browse Categories">
+                                    <i class="fa-solid fa-bars" style="font-size: 14px"></i>
+                                    <span>Browse Categories</span>
+                                </a>
+
+                                <div class="dropdown-box">
+                                    <ul class="menu vertical-menu category-menu">
+                                        @foreach (var category in Model.Categories)
+                                        {
+                                            var subcategories = Model.Subcategories.Where(s => s.ParentCategoryID == category.ID).ToList();
+
+                                            <li>
+                                                <a asp-controller="shop" asp-action="index" asp-route-category="@category.ID">
+                                                    <i class="fa-solid fa-@category.Icon"></i>
+                                                    <span class="d-flex w-100">@category.Name</span>
+                                                    @if (subcategories.Any())
+                                                    {
+                                                        <div>
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </div>
+                                                    }
+                                                </a>
+                                                <ul class="megamenu">
+                                                    @{
+                                                        if (subcategories.Any())
+                                                        {
+                                                            foreach (var subcategory in subcategories)
+                                                            {
+                                                                @if (subcategory.ParentSubcategoryID == null)
+                                                                {
+                                                                    <li>
+
+                                                                        <h4 class="menu-title">@subcategory.Name</h4>
+                                                                        <hr class="divider">
+                                                                        <ul>
+                                                                            @foreach (var subSubcategory in Model.Subcategories.Where(s => s.ParentSubcategoryID == subcategory.ID))
+                                                                            {
+                                                                                <li>
+                                                                                    <a asp-controller="shop" asp-action="index" asp-route-category="@category.ID">@subSubcategory.Name</a>
+                                                                                </li>
+                                                                            }
+                                                                        </ul>
+                                                                    </li>
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    @if (Model.Subcategories.Any(x => x.ParentCategoryID == category.ID))
+                                                    {
+                                                        <li>
+                                                            <div class="banner-fixed menu-banner menu-banner2">
+                                                                <figure>
+                                                                    <img src="~/assets/images/@category.Image"
+                                                                         alt="Menu Banner" width="235"
+                                                                         height="347" />
+                                                                </figure>
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </li>
+                                        }
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <form asp-controller="shop" asp-action="index" method="GET" class="search-box d-flex gap-3">
+                                <div class="select-box">
+                                    <select name="categoryID">
+                                        <option value="All">All Categories</option>
+                                        @foreach (Category category in Model.Categories)
+                                        {
+                                            <option value="@category.ID">@category.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                                <input type="text" name="q" placeholder="Search in...">
+                                <div class="search-wrapper">
+                                    <button type="submit" class="search-btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="header-right d-flex">
+                            <a asp-controller="account" asp-action="profile" class="item-box">
+                                <i class="fa-solid fa-truck"></i>
+                                <span>Track Order</span>
+                            </a>
+                            <a asp-controller="shop" asp-action="index" class="item-box">
+                                <i class="fa-brands fa-ideal"></i>
+                                <span>Daily Deals</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile__header">
+    <div class="container">
+        <div class="row">
+            <div class="mobile__header-wrapper">
+                <a href="#" class="mobile-menu-toggle  w-icon-hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="mobile__menu">
+                    <div class="overlay__menu"></div>
+
+                    <a href="#" class="close__menu"><i class="close-menu"></i></a>
+
+                    <div class="mobile__menu-wrapper item">
+                        <form asp-controller="shop" asp-action="index" method="GET" class="form__base">
+                            <input type="text" class="form-control" name="q" autocomplete="off" placeholder="Search"
+                                   required />
+                            <button class="btn btn-submit" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+
+                        <ul class="nav nav-tabs mb-3" id="ex3 nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active"
+                                   id="ex3-tab-1"
+                                   data-bs-toggle="tab"
+                                   href="#ex3-tabs-1"
+                                   role="tab"
+                                   aria-controls="ex3-tabs-1"
+                                   aria-selected="true">MAIN MENU</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link"
+                                   id="ex3-tab-2"
+                                   data-bs-toggle="tab"
+                                   href="#ex3-tabs-2"
+                                   role="tab"
+                                   aria-controls="ex3-tabs-2"
+                                   aria-selected="false">CATEGORIES</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="ex3-content">
+                            <div class="tab-pane fade show active"
+                                 id="ex3-tabs-1"
+                                 role="tabpanel"
+                                 aria-labelledby="ex3-tab-1">
+                                <div class="tab-pane" id="main-menu">
+                                    <ul class="mobile-menu">
+                                        <li>
+                                            <a asp-controller="home" asp-action="index">Home</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="shop" asp-action="index">Shop</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="contact" asp-action="index">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="about" asp-action="index">About</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="account" asp-action="index">Account</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
+                                <div class="tab-pane active" id="categories">
+                                    <ul class="mobile-menu">
+                                        @foreach (var category in Model.Categories)
+                                        {
+                                            var subcategories = Model.Subcategories.Where(x => x.ParentCategoryID == category.ID).ToList();
+
+                                            <li>
+                                                <a asp-controller="shop" asp-action="index" asp-route-category="@category.ID">
+                                                    <i class="fa-solid fa-@category.Icon"></i>
+                                                    <span class="d-flex w-100">@category.Name</span>
+
+                                                    @if (subcategories.Any())
+                                                    {
+                                                        <span class="menu-btn">
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </span>
+                                                    }
+                                                </a>
+                                                <ul class="menu__wrapper" id="menu__wrapper">
+                                                    @{
+                                                        if (subcategories.Any())
+                                                        {
+                                                            foreach (var subcategory in subcategories)
+                                                            {
+                                                                @if (subcategory.ParentSubcategoryID == null)
+                                                                {
+                                                                    <li>
+                                                                        <a asp-controller="shop" asp-action="index" asp-route-category="@category.ID">
+                                                                            @subcategory.Name
+                                                                            <span class="menu-btn"><i class="fa-solid fa-chevron-right"></i></span>
+                                                                        </a>
+                                                                        <ul class="menu__wrapper-link" id="menu__wrapper-link">
+                                                                            @foreach (var subSubcategory in Model.Subcategories.Where(s => s.ParentSubcategoryID == subcategory.ID))
+                                                                            {
+                                                                                <li>
+                                                                                    <a asp-controller="shop" asp-action="index" asp-route-category="@category.ID">@subSubcategory.Name</a>
+                                                                                </li>
+                                                                            }
+                                                                        </ul>
+                                                                    </li>
+                                                                }
+                                                            }                                                          
+                                                        }
+                                                    }
+                                                </ul>
+                                            </li>
+                                        }
+                                        <li>
+                                            <a asp-controller="shop" asp-action="index">
+                                                View All Categories
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="header-logo" asp-controller="home" asp-action="index">
+                    <img src="~/assets/images/header-logo.png" alt="Header Logo">
+                </a>
+                <div class="card__wrapper">
+                    <div class="sl-nav">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <div class="cart-info">
+                                    @await Html.PartialAsync("_CartPartial", cartVMs)
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

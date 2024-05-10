@@ -1,0 +1,31 @@
+﻿@model List<WishlistVM>
+
+<div class="page-header">
+    <h1 class="page-title mb-0">Wishlist</h1>
+</div>
+
+<nav class="breadcrumb-nav">
+    <div class="container">
+        <div class="row">
+            <ul class="breadcrumb-main">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <i class="fa-solid fa-angle-right"></i>
+                <li>
+                    <a href="my-account.html">Wishlist</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="cart__main">
+    <div class="container">
+        <div class="row">
+            <div id="wishlistIndex" class="cart__product">
+                @await Html.PartialAsync("_WishlistIndexPartial", Model)
+            </div>
+        </div>
+    </div>
+</div>

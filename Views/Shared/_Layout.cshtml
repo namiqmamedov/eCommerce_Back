@@ -1,0 +1,231 @@
+﻿@inject ILayoutServices layoutservices
+
+@{
+    List<Category> categories = await layoutservices.GetCategories();
+
+    List<Subcategory> subcategories = await layoutservices.GetSubcategories();
+
+    List<CartVM> cartvm = await layoutservices.GetCart();
+
+    HeaderVM headerVM = new HeaderVM
+            {
+                Categories = categories,
+                Subcategories = subcategories,
+                CartVMs = cartvm
+            };
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolmart</title>
+    <link rel="stylesheet" href="~/styles/index.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/dropdown.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/swiper.css">
+    <link rel="stylesheet" href="~/styles/shop-sidebar.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/accordion.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/checkout.css">
+    <link rel="stylesheet" href="~/styles/contact.css">
+    <link rel="stylesheet" href="~/styles/cart.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/about.css">
+    <link rel="stylesheet" href="~/styles/drawer.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/my-account.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/styles/product-detail.css" asp-append-version="true">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/solid.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    @await Component.InvokeAsync("Header", headerVM)
+
+    @RenderBody()
+
+    @await Component.InvokeAsync("Footer")
+
+    <div id="progress-wrap" class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <div class="modal fade modal-index" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <ul class="nav nav-tabs mb-3" id="ex2 nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active"
+                           id="ex2-tab-1"
+                           data-bs-toggle="tab"
+                           href="#ex2-tabs-1"
+                           role="tab"
+                           aria-controls="ex2-tabs-1"
+                           aria-selected="true">SIGN IN</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link"
+                           id="ex2-tab-2"
+                           data-bs-toggle="tab"
+                           href="#ex2-tabs-2"
+                           role="tab"
+                           aria-controls="ex2-tabs-2"
+                           aria-selected="false">SIGN UP</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="ex2-content">
+                    <form asp-controller="account" asp-action="login" method="POST" class="tab-pane fade show active"
+                          id="ex2-tabs-1"
+                          role="tabpanel"
+                          aria-labelledby="ex2-tab-1">
+                        @if (TempData["ErrorMessage"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                <ul>
+                                    @foreach (var modelStateEntry in ViewData.ModelState)
+                                    {
+                                        foreach (var error in modelStateEntry.Value.Errors)
+                                        {
+                                            <li style="font-size: 13px">@error.ErrorMessage</li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <label>Email address *</label>
+                            <input type="text" class="form-control" name="loginEmail" id="username" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Password *</label>
+                            <input type="password" class="form-control" name="loginPassword" id="password" required="">
+                        </div>
+
+                        <div class="checkboxes">
+                            <div class="checkboxes__row">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Remember Me</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="login-btn text-uppercase" type="submit">
+                            Sign In
+                        </button>
+
+                    </form>
+                    <form asp-controller="account" asp-action="register" method="POST" class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                        <span class="text text-danger" asp-validation-summary="ModelOnly"></span>
+                        @if (TempData["ModelStateErrors"] != null)
+                        {
+                            var errors = TempData["ModelStateErrors"];
+                            if (errors is string[])
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    <ul>
+                                        @foreach (var error in (string[])errors)
+                                        {
+                                            <li style="font-size: 13px">@error</li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                            else if (errors is string)
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    <ul>
+                                        <li style="font-size: 13px">@errors</li>
+                                    </ul>
+                                </div>
+                            }
+                        }
+
+                        <div class="form-group">
+                            <label>Your Email address *</label>
+                            <input type="email" class="form-control" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>First Name *</label>
+                            <input type="text" class="form-control" name="firstName" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name *</label>
+                            <input type="text" class="form-control" name="lastName" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Username *</label>
+                            <input type="text" class="form-control" name="username" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Password *</label>
+                            <input type="password" class="form-control" name="password" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm Password *</label>
+                            <input type="password" class="form-control" name="confirmPassword" required="">
+                        </div>
+
+                        <p>
+                            Your personal data will be used to support your experience
+                            throughout this website, to manage access to your account,
+                            and for other purposes described in our
+                            <a href="#">
+                                privacy policy.
+                            </a>
+                        </p>
+
+                        <div class="checkboxes">
+                            <div class="checkboxes__row">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">
+                                            I agree to the
+                                            <a href="#">
+                                                privacy policy
+                                            </a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="login-btn text-uppercase" type="submit">
+                            Sign Up
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="~/assets/js/photoswipe.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+    <script src="~/assets/js/custom.js" asp-append-version="true"></script>
+    <script src="~/assets/js/accordion.js"></script>
+    <script src="~/assets/js/swiper.js"></script>
+    <script src="~/assets/js/drawer.js"></script>
+    <script src="~/assets/js/script.js" asp-append-version="true"></script>
+    @* <script src="/assets/js/countdown.js"></script> *@
+</body>
+
+</html>

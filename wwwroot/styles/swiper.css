@@ -1,0 +1,115 @@
+.swiper-container {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.swiper-container .swiper-slide {
+  height: 555px;
+  min-height: 20vh;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-button-container {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-slide .item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-slide .image-wrapper {
+  width: 50%;
+}
+.swiper-slide .image-wrapper img {
+  width: 100%;
+  height: 571px;
+}
+.swiper-slide .content-wrapper {
+  width: 50%;
+  text-align: end;
+}
+.swiper-slide .content-wrapper div {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline;
+}
+.swiper-slide .content-wrapper .second {
+  font-size: 24px;
+  font-weight: bold;
+}
+.swiper-slide .content-wrapper .description {
+  font-size: 16px;
+}
+.swiper-slide .content-wrapper .shop-btn {
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 3px;
+  padding: 14px 25px;
+  margin-top: 25px;
+  width: 40%;
+  margin-left: auto;
+  transition: 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+.swiper-slide .content-wrapper .shop-btn:hover {
+  background: #000;
+  color: #fff !important;
+}
+.swiper-slide .content-wrapper .shop-btn svg {
+  margin-left: 2px;
+}
+.swiper-slide .content-wrapper h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.swiper-slide .content-wrapper h3 {
+  font-size: 43px;
+  max-width: 385px;
+  font-weight: bold;
+  margin-left: auto;
+}
+.swiper-slide .content-wrapper span {
+  font-size: 45px;
+  font-weight: bold;
+}
+.swiper-slide .content-wrapper.second {
+  text-align: left;
+}
+.swiper-slide .content-wrapper.second .shop-btn {
+  width: 50%;
+  margin-left: unset;
+}
+.swiper-slide .content-wrapper.second h3 {
+  max-width: 430px;
+  margin-left: 0;
+}
+/*# sourceMappingURL=swiper.css.map */
