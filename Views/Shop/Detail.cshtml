@@ -289,18 +289,30 @@
                                         <div class="form__main">
                                             <h3>Submit Your Review</h3>
                                             <p class="mb-3">Your email address will not be published. Required fields are marked *</p>
-                                            <form asp-controller="shop" asp-action="detail" method="POST" class="review-form" enctype="multipart/form-data">
+                                            <form method="POST" class="review-form" enctype="multipart/form-data">
                                                 @if (TempData["FeedbackError"] != null)
                                                 {
-                                                    <div class="alert alert-danger" role="alert">
-                                                        <ul>
-                                                            @foreach (var errorMessage in (string[])TempData["FeedbackError"])
-                                                            {
-                                                                <li style="font-size: 13px">@errorMessage</li>
-                                                            }
-                                                        </ul>
-                                                    </div>
+                                                    if (TempData["FeedbackError"] is string[] errorMessagesArray)
+                                                    {
+                                                        <div class="alert alert-danger" role="alert">
+                                                            <ul>
+                                                                @foreach (var errorMessage in errorMessagesArray)
+                                                                {
+                                                                    <li style="font-size: 13px">@errorMessage</li>
+                                                                }
+                                                            </ul>
+                                                        </div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="alert alert-danger" role="alert">
+                                                            <ul>
+                                                                <li style="font-size: 13px">@TempData["FeedbackError"]</li>
+                                                            </ul>
+                                                        </div>
+                                                    }
                                                 }
+
                                                 <span class="text text-danger" asp-validation-summary="ModelOnly"></span>
                                                 <div class="rating-form">
                                                     <label for="rating">Your Rating Of This Product :</label>
@@ -495,3 +507,4 @@
         </div>
     </div>
 </section>
+

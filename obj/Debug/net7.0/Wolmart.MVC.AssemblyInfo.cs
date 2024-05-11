@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wolmart.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7baee2444d3ed95d6f532b9733cb260439f47e37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4cb99ae8991089a3bdba1a9cc5dfe9d2d99f37f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wolmart.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wolmart.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

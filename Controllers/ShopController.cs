@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json;
 using Wolmart.MVC.DAL;
 using Wolmart.MVC.Extension;
@@ -185,60 +186,72 @@ namespace Wolmart.MVC.Controllers
 
             return View(shopVM);
         }
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Detail(int ID, Feedback feedback)
+        public async Task<IActionResult> Detail(int ID, ShopVM shopVM)
         {
             if (!ModelState.IsValid)
             {
-                List<string> errorMessages = ModelState.Values
-                    .SelectMany(v => v.Errors)
-                    .Select(e => e.ErrorMessage)
-                    .ToList();
+                foreach (var key in ModelState.Keys.ToList())
+                {
+                    if (!key.StartsWith(nameof(shopVM.Feedback)))
+                    {
+                        ModelState.Remove(key);
+                    }
+                    if (!ModelState.IsValid && key.StartsWith(nameof(shopVM.Feedback)))
+                    {
+                        List<string> errorMessages = ModelState.Values
+                            .SelectMany(v => v.Errors)
+                            .Select(e => e.ErrorMessage)
+                            .ToList();
 
-                TempData["FeedbackError"] = errorMessages;
+                        TempData["FeedbackError"] = errorMessages;
 
-                return RedirectToAction("Detail", "Shop", new { ID = ID });
+                        return RedirectToAction("Detail", "Shop", new { ID = ID });
+                    }
+                }
             }
 
-            if (feedback.Files != null && feedback.Files.Count() > 0)
+            if (shopVM.Feedback.Files != null && shopVM.Feedback.Files.Count() > 0)
             {
                 List<FeedbackImage> feedbackImages = new List<FeedbackImage>();
 
-                foreach (IFormFile file in feedback.Files)
+                foreach (IFormFile file in shopVM.Feedback.Files)
                 {
                     if (!file.CheckFileType())
                     {
-                        ModelState.AddModelError("Files", "File type must be jpg or png.");
-                        return View(feedback);
+                        TempData["FeedbackError"] = "File type must be jpg or png.";
+
+                        return RedirectToAction("Detail", "Shop", new { ID = ID });
                     }
 
                     if (!file.CheckFileSize(20000))
                     {
-                        ModelState.AddModelError("Files", "The maximum size must be 20mb!");
-                        return View();
+                        TempData["FeedbackError"] = "The maximum size must be 20mb!";
+
+                        return RedirectToAction("Detail", "Shop", new { ID = ID });
                     }
 
                     FeedbackImage feedbackImage = new FeedbackImage
                     {
                         Image = file.CreateImage(_env, "assets", "images", "feedbacks"),
-                        FeedbackID = feedback.ID,
+                        FeedbackID = shopVM.Feedback.ID,
                         CreatedAt = DateTime.Now
                     };
 
                     feedbackImages.Add(feedbackImage);
                 }
-                feedback.FeedbackImages= feedbackImages;
+                shopVM.Feedback.FeedbackImages = feedbackImages;
             }
 
-            feedback.Name = feedback.Name.Trim();
-            feedback.Text = feedback.Text.Trim();
-            feedback.Email = feedback.Email.Trim();
-            feedback.ProductID = ID;
-            feedback.CreatedAt = DateTime.Now;
+            shopVM.Feedback.Name = shopVM.Feedback.Name.Trim();
+            shopVM.Feedback.Text = shopVM.Feedback.Text.Trim();
+            shopVM.Feedback.Email = shopVM.Feedback.Email.Trim();
+            shopVM.Feedback.ProductID = ID;
+            shopVM.Feedback.CreatedAt = DateTime.Now;
 
-            await _context.Feedbacks.AddAsync(feedback);
+            await _context.Feedbacks.AddAsync(shopVM.Feedback);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Detail", "Shop", new { ID = ID });
